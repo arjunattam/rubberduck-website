@@ -2,8 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
-
-import './index.css'
+import favicon from '../static/icon-16.png'
+// import './index.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -16,7 +17,9 @@ const TemplateWrapper = ({ children }) => (
         },
         { name: 'keywords', content: 'github, code, reviews, sidebar' },
       ]}
-    />
+    >
+      <link rel="icon" href={favicon} type="image/x-icon" />
+    </Helmet>
     <div
       style={{
         margin: '30px auto',

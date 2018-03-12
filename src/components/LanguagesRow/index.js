@@ -1,7 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
 import 'devicon/devicon.css'
-import 'devicon/devicon-colors.css'
 import './index.css'
 
 const LanguagesRow = () => (

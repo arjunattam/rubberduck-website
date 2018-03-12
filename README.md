@@ -24,4 +24,10 @@ Ensure that the files have public permissions.
 npm run permissions
 ```
 
+For one command that builds, deploys and checks permissions, run
+
+```
+npm run push
+```
+
 For more info, check out the [GCP guide](https://cloud.google.com/storage/docs/hosting-static-website) for hosting static websites.
