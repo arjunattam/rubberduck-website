@@ -9,7 +9,7 @@ import ReactGA from 'react-ga'
 ReactGA.initialize('UA-115538378-1')
 
 exports.onRouteUpdate = (state, page, pages) => {
-  const { pathname } = state
+  const { pathname } = state.location
   ReactGA.set({ page: pathname })
   ReactGA.pageview(pathname)
 }
