@@ -1,0 +1,24 @@
+.languages-container {
+  margin: 20px 0px;
+}
+
+.languages-row,
+.languages-header {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages-row i {
+  font-size: 36px;
+  padding: 20px;
+  color: #bbb;
+}
+
+@media only screen and (max-width: 576px) {
+  .languages-row i {
+    font-size: 24px;
+    padding: 15px;
+  }
+}

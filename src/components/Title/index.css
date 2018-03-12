@@ -1,0 +1,28 @@
+.title-row {
+  margin: 40px 0;
+}
+
+.title-row h1 {
+  margin-bottom: 0;
+}
+
+.logo-section {
+  flex: 0 0 72px;
+}
+
+.install-section {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 576px) {
+  .title-row h1 {
+    font-size: 2em;
+  }
+
+  .install-section {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
