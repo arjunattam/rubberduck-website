@@ -12,9 +12,9 @@ const CTASection = () => (
   <Jumbotron className="cta-section">
     <p className="lead">Rubberduck for your team</p>
     <p>
-      We want to help your team deliver quality output with faster code reviews.
+      We want to help your team deliver quality output with better code reviews.
       Rubberduck can work with your private repositories, under your internal
-      security requirements. Can we reach out?
+      security requirements.
     </p>
     <div className="lead">
       <InputGroup className="cta-input-group">
