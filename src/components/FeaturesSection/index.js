@@ -22,18 +22,19 @@ const sections = [
   {
     img: referencesImg,
     title: 'Find usages',
-    text: 'Find where your symbols are used, without searching for them.',
+    text:
+      'Find where your methods are called from, and where your classes are instantiated.',
   },
   {
     img: definitionsImg,
     title: 'Open definitions',
-    text: 'Glance method and class definitions in the sidebar.',
+    text: 'Glance method and class code snippets right next to the diff view.',
   },
   {
     img: filesImg,
     title: 'Diff navigation',
     text:
-      'Stop scrolling the diff view cluelessly; navigate the diff with the files tree.',
+      'Navigate the diff with a files tree, and avoid the clueless scrolling.',
   },
 ]
 

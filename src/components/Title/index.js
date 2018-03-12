@@ -4,7 +4,8 @@ import InstallButton from '../InstallButton'
 import './index.css'
 import logo from '../../static/icon-72.png'
 
-export const description = 'Sidebar IDE for better code reviews on GitHub'
+export const description =
+  'IDE capabilities in your browser, for better code reviews on GitHub'
 
 class Title extends React.Component {
   render() {

@@ -22,7 +22,9 @@ const Footer = () => (
       <Col />
       <Col md="5" xs="12" className="contact-section">
         <p>{gitterIcon}</p>
-        <p>team@karigari.io</p>
+        <p>
+          <a href="mailto:team@karigari.io">team@karigari.io</a>
+        </p>
       </Col>
     </Row>
   </Container>
