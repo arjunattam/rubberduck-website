@@ -19,6 +19,7 @@ const VideoRow = () => (
     autoPlay
     muted
     loop
+    playsInline
   >
     <source src="demo-video-2.mp4" type="video/mp4" />
   </video>
