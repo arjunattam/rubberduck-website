@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'bootstrap/dist/css/bootstrap.css'
+
 import Footer from '../components/Footer'
 import favicon from '../static/icon-16.png'
-// import './index.css'
-import 'bootstrap/dist/css/bootstrap.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>

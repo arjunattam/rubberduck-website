@@ -5,7 +5,7 @@ import './index.css'
 
 const LanguagesRow = () => (
   <div className="languages-container">
-    <Row className="languages-header">Supported languages</Row>
+    {/* <Row className="languages-header">Supported languages</Row> */}
     <Row className="languages-row">
       <i className="devicon-python-plain" />
       <i className="devicon-javascript-plain" />

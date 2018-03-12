@@ -11,13 +11,14 @@
 }
 
 .languages-row i {
-  font-size: 42px;
-  padding: 15px;
+  font-size: 36px;
+  padding: 20px;
   color: #bbb;
 }
 
 @media only screen and (max-width: 576px) {
   .languages-row i {
-    font-size: 28px;
+    font-size: 24px;
+    padding: 15px;
   }
 }

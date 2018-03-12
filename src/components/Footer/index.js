@@ -1,15 +1,29 @@
 import React from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
+import './index.css'
 import logo from '../../static/icon-24.png'
+
+const gitterIcon = (
+  <a href="https://gitter.im/rubberduckio/Lobby" target="_blank">
+    <img src="https://badges.gitter.im/gitterHQ/gitter.png" />
+  </a>
+)
 
 const Footer = () => (
   <Container>
-    <Row>
-      <Col>
-        <img src={logo} alt="Logo" />Built for a better code reading experience
-        online. <a href="#">See more</a>
+    <Row className="footer-row">
+      <Col className="footer-logo-section">
+        <img src={logo} alt="Logo" />
       </Col>
-      <Col>Got feedback? Or want to join us? Reach out at team@karigari.io</Col>
+      <Col md="4" xs="10">
+        Built towards a better code reading experience on the web.{' '}
+        <a href="mailto:team@karigari.io">Work with us</a>.
+      </Col>
+      <Col />
+      <Col md="5" xs="12" className="contact-section">
+        <p>{gitterIcon}</p>
+        <p>team@karigari.io</p>
+      </Col>
     </Row>
   </Container>
 )
