@@ -13,7 +13,7 @@ class Title extends React.Component {
         </Col>
         <Col md="6" xs="8">
           <h1>Rubberduck</h1>
-          <p>Sidebar IDE for better GitHub code reviews</p>
+          <p>Sidebar IDE for better code reviews on GitHub</p>
         </Col>
         <Col className="install-section">
           <InstallButton />

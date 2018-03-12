@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import { Container } from 'reactstrap'
 
 import LanguagesRow from '../components/LanguagesRow'
+import FeaturesSection from '../components/FeaturesSection'
 import CTASection from '../components/CTASection'
 import Title from '../components/Title'
 
@@ -16,6 +17,7 @@ const IndexPage = () => (
   <Container>
     <Title />
     <VideoRow />
+    <FeaturesSection />
     <LanguagesRow />
     <CTASection />
   </Container>
