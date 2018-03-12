@@ -1,20 +1,29 @@
 import React from 'react'
-import { Row, Col, Jumbotron, Button } from 'reactstrap'
+import {
+  Jumbotron,
+  Button,
+  InputGroup,
+  InputGroupAddon,
+  Input,
+} from 'reactstrap'
 import './index.css'
 
 const CTASection = () => (
-  <Jumbotron>
-    {/* <h1 className="display-3">Hello, world!</h1> */}
-    <p className="lead">
-      Use Rubberduck for your private repositories -- on-prem
-    </p>
+  <Jumbotron className="cta-section">
+    <p className="lead">Accelerate code reviews in your team</p>
     <hr className="my-2" />
     <p>
-      It uses utility classes for typgraphy and spacing to space content out
-      within the larger container.
+      We want to help your team deliver high-quality output, with better code
+      reviews. Rubberduck can work with your private repositories, under your
+      internal security requirements.
     </p>
     <p className="lead">
-      <Button color="primary">Learn More</Button>
+      <InputGroup className="cta-input-group">
+        <Input placeholder="Your email" />
+        <InputGroupAddon addonType="append">
+          <Button color="primary">Learn more</Button>
+        </InputGroupAddon>
+      </InputGroup>
     </p>
   </Jumbotron>
 )
