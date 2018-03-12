@@ -19,9 +19,3 @@ gsutil acl ch -u AllUsers:R gs://www.rubberduck.io/index.html
 ```
 
 For more info, check out the [GCP guide](https://cloud.google.com/storage/docs/hosting-static-website) for hosting static websites.
-
-## Infra todos
-
-1. Need to get SSL working, either by GCP load balancer, or [Cloudflare](https://www.cloudflare.com/ssl/).
-
-2. Verify if non-www redirection is working.
