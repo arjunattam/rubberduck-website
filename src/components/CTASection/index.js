@@ -10,21 +10,20 @@ import './index.css'
 
 const CTASection = () => (
   <Jumbotron className="cta-section">
-    <p className="lead">Accelerate code reviews in your team</p>
-    <hr className="my-2" />
+    <p className="lead">Rubberduck for your team</p>
     <p>
-      We want to help your team deliver high-quality output, with better code
-      reviews. Rubberduck can work with your private repositories, under your
-      internal security requirements.
+      We want to help your team deliver quality output with faster code reviews.
+      Rubberduck can work with your private repositories, under your internal
+      security requirements. Can we reach out?
     </p>
-    <p className="lead">
+    <div className="lead">
       <InputGroup className="cta-input-group">
         <Input placeholder="Your email" />
         <InputGroupAddon addonType="append">
-          <Button color="primary">Learn more</Button>
+          <Button color="primary">Get in touch</Button>
         </InputGroupAddon>
       </InputGroup>
-    </p>
+    </div>
   </Jumbotron>
 )
 

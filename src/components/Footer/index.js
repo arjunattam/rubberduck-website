@@ -17,7 +17,7 @@ const Footer = () => (
       </Col>
       <Col md="4" xs="10">
         Built towards a better code reading experience on the web.{' '}
-        <a href="mailto:team@karigari.io">Work with us</a>.
+        <a href="mailto:team@karigari.io">Join us</a>.
       </Col>
       <Col />
       <Col md="5" xs="12" className="contact-section">

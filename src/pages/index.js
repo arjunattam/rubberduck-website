@@ -8,19 +8,34 @@ import CTASection from '../components/CTASection'
 import Title from '../components/Title'
 
 const VideoRow = () => (
-  <video style={{ width: '100%', height: 'auto' }} autoPlay muted loop>
-    <source src="demo-video-1.mov" type="video/mp4" />
+  <video
+    style={{
+      width: '100%',
+      height: 'auto',
+      marginBottom: '10px',
+      boxShadow: '0 0 0.75rem 5px rgba(0, 0, 0, 0.05)',
+    }}
+    className="video-section"
+    autoPlay
+    muted
+    loop
+  >
+    <source src="demo-video-2.mp4" type="video/mp4" />
   </video>
 )
 
 const IndexPage = () => (
-  <Container>
-    <Title />
+  <div>
+    <Container>
+      <Title />
+    </Container>
     <VideoRow />
-    <FeaturesSection />
-    <LanguagesRow />
-    <CTASection />
-  </Container>
+    <Container>
+      <LanguagesRow />
+      <FeaturesSection />
+      <CTASection />
+    </Container>
+  </div>
 )
 
 export default IndexPage

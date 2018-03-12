@@ -4,6 +4,8 @@ import InstallButton from '../InstallButton'
 import './index.css'
 import logo from '../../static/icon-72.png'
 
+export const description = 'Sidebar IDE for better code reviews on GitHub'
+
 class Title extends React.Component {
   render() {
     return (
@@ -13,7 +15,7 @@ class Title extends React.Component {
         </Col>
         <Col md="6" xs="8">
           <h1>Rubberduck</h1>
-          <p>Sidebar IDE for better code reviews on GitHub</p>
+          <p>{description}</p>
         </Col>
         <Col className="install-section">
           <InstallButton />
