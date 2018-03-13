@@ -45,7 +45,7 @@ function postAjax(url, data, success) {
   return xhr
 }
 
-const leadUrl = 'https://codeview.io/api/v1/website_leads/'
+const leadUrl = 'https://www.codeview.io/api/v1/website_leads/'
 
 const ipInfoUrl = 'https://ipinfo.io/json?token=737774ee26668f'
 
