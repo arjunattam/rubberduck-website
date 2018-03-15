@@ -19,7 +19,7 @@ const VideoRow = () => (
     loop
     playsInline
   >
-    <source src="demo-video-2.mp4" type="video/mp4" />
+    <source src="demo-video-5-hb-2.mp4" type="video/mp4" />
   </video>
 )
 
