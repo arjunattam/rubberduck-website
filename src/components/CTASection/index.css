@@ -2,6 +2,7 @@
   background: linear-gradient(60deg, #141e30, #243b55);
   color: #dee3ea;
   margin: 40px 15px;
+  border-radius: 0.75rem;
 }
 
 .cta-section h3 {

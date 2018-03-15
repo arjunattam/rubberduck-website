@@ -23,6 +23,7 @@
   border: none;
   display: block;
   background: linear-gradient(180deg, #ffffff, #f5f8ff);
+  border-radius: 0.75rem;
 }
 
 .feature-card-inner {
