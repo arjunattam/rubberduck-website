@@ -24,6 +24,12 @@
   max-width: 800px;
 }
 
+@media only screen and (max-width: 576px) {
+  .page-section-2 {
+    clip-path: polygon(0 0, 100% 3%, 100% 98%, 0 100%);
+  }
+}
+
 /* Setup google fonts */
 h1,
 h2,
@@ -31,9 +37,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  /* font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+    'Segoe UI Symbol'; */
   text-shadow: 1px 3px #f8e71c;
 }
 
