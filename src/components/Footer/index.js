@@ -9,13 +9,13 @@ const email = 'team@karigari.io'
 const ContactSection = () => (
   <div className="contact-section">
     <div>
-      <a href={twitter}>
-        <i className="devicon-twitter-plain" />
-      </a>
+      <a href={`mailto:${email}`}>{email}</a>
     </div>
     {'/'}
     <div>
-      <a href={`mailto:${email}`}>{email}</a>
+      <a href={twitter}>
+        <i className="devicon-twitter-plain" />
+      </a>
     </div>
   </div>
 )

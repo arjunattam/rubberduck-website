@@ -1,5 +1,6 @@
 .cta-section {
-  background: #fff;
+  background: linear-gradient(60deg, #141e30, #243b55);
+  color: #fff;
   margin: 30px 15px;
 }
 
