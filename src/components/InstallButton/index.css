@@ -1,12 +1,13 @@
 a.install-button {
-  color: #356abb !important;
+  color: #2a68c1 !important;
   background-color: #fff;
-  border: 1.5px solid #356abb;
+  border: 1.5px solid #2a68c1;
 }
 
 a.install-button:hover {
   color: #fff !important;
-  background-color: #356abb;
+  background-color: #2a68c1;
+  border: 1.5px solid #2a68c1;
 }
 
 .install-button i {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
+import RubberduckIcon from '../icon'
 import './index.css'
-import logo from '../../static/icon-24.png'
 
 const gitterIcon = (
   <a href="https://gitter.im/rubberduckio/Lobby" target="_blank">
@@ -13,7 +13,7 @@ const Footer = () => (
   <Container>
     <Row className="footer-row">
       <Col className="footer-logo-section">
-        <img src={logo} alt="Logo" />
+        <RubberduckIcon size="24" />
       </Col>
       <Col md="4" xs="10">
         Built towards a better code reading experience on the web.{' '}

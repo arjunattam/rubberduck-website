@@ -118,7 +118,7 @@ class CTASection extends React.Component {
 
     return (
       <Jumbotron className="cta-section">
-        <p className="lead">Rubberduck for your team</p>
+        <h3>Rubberduck for your team</h3>
         <p>
           Deliver quality output with better code reviews. Rubberduck works with
           your private repositories, under your internal security requirements.

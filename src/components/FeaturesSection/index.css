@@ -7,7 +7,7 @@
 }
 
 .features-card {
-  box-shadow: 0 0 0.75rem 5px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 0 0.75rem 5px rgba(0, 0, 0, 0.05); */
   height: 390px;
   border: none;
   display: block;
