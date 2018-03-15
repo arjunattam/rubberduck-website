@@ -21,6 +21,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     >
       <link rel="icon" href={favicon} type="image/x-icon" />
+      <link
+        rel="chrome-webstore-item"
+        href="https://chrome.google.com/webstore/detail/nopekhgebkpkbjoclackdlofmcpokgmc"
+      />
     </Helmet>
     <div>
       {children()}
