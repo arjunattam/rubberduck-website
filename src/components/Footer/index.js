@@ -3,10 +3,21 @@ import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import RubberduckIcon from '../icon'
 import './index.css'
 
-const gitterIcon = (
-  <a href="https://gitter.im/rubberduckio/Lobby" target="_blank">
-    <img src="https://badges.gitter.im/gitterHQ/gitter.png" />
-  </a>
+const twitter = 'https://twitter.com/getrubberduck'
+const email = 'team@karigari.io'
+
+const ContactSection = () => (
+  <div className="contact-section">
+    <div>
+      <a href={twitter}>
+        <i className="devicon-twitter-plain" />
+      </a>
+    </div>
+    {'/'}
+    <div>
+      <a href={`mailto:${email}`}>{email}</a>
+    </div>
+  </div>
 )
 
 const Footer = () => (
@@ -15,16 +26,13 @@ const Footer = () => (
       <Col className="footer-logo-section">
         <RubberduckIcon size="24" />
       </Col>
-      <Col md="4" xs="10">
-        Built towards a better code reading experience on the web.{' '}
-        <a href="mailto:team@karigari.io">Join us</a>.
+      <Col md="6" xs="10">
+        <a href={`mailto:${email}`}>Join the team</a> to build a better code
+        reading experience on the web.
       </Col>
       <Col />
-      <Col md="5" xs="12" className="contact-section">
-        <p>{gitterIcon}</p>
-        <p>
-          <a href="mailto:team@karigari.io">team@karigari.io</a>
-        </p>
+      <Col md="3" xs="12">
+        <ContactSection />
       </Col>
     </Row>
   </Container>
