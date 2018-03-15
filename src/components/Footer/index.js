@@ -1,30 +1,44 @@
 import React from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
+import RubberduckIcon from '../icon'
 import './index.css'
-import logo from '../../static/icon-24.png'
 
-const gitterIcon = (
-  <a href="https://gitter.im/rubberduckio/Lobby" target="_blank">
-    <img src="https://badges.gitter.im/gitterHQ/gitter.png" />
-  </a>
+const twitter = 'https://twitter.com/getrubberduck'
+const email = 'team@karigari.io'
+const wiki = 'https://en.wikipedia.org/wiki/Rubber_duck_debugging'
+
+const ContactSection = () => (
+  <div className="contact-section">
+    <div>
+      <a href={`mailto:${email}`}>{email}</a>
+    </div>
+    {'/'}
+    <div>
+      <a href={twitter}>
+        <i className="devicon-twitter-plain" />
+      </a>
+    </div>
+  </div>
 )
 
 const Footer = () => (
   <Container>
     <Row className="footer-row">
       <Col className="footer-logo-section">
-        <img src={logo} alt="Logo" />
+        <RubberduckIcon size="24" />
       </Col>
-      <Col md="4" xs="10">
-        Built towards a better code reading experience on the web.{' '}
-        <a href="mailto:team@karigari.io">Join us</a>.
+      <Col md="6" xs="10">
+        <div>
+          <a href={`mailto:${email}`}>Join the team</a> to build a better code
+          reading experience on the web.
+        </div>
+        <div style={{ marginTop: 15 }}>
+          Why <a href={wiki}>rubberduck</a>?
+        </div>
       </Col>
       <Col />
-      <Col md="5" xs="12" className="contact-section">
-        <p>{gitterIcon}</p>
-        <p>
-          <a href="mailto:team@karigari.io">team@karigari.io</a>
-        </p>
+      <Col md="3" xs="12">
+        <ContactSection />
       </Col>
     </Row>
   </Container>

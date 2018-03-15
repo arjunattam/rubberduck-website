@@ -1,18 +1,18 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
 import InstallButton from '../InstallButton'
+import RubberduckIcon from '../icon'
 import './index.css'
-import logo from '../../static/icon-72.png'
 
 export const description =
-  'IDE capabilities in your browser, for better code reviews on GitHub'
+  'Faster code reviews on GitHub with code-aware navigation'
 
 class Title extends React.Component {
   render() {
     return (
       <Row className="title-row">
         <Col className="logo-section">
-          <img src={logo} alt="Logo" />
+          <RubberduckIcon size="72" />
         </Col>
         <Col md="6" xs="8">
           <h1>Rubberduck</h1>

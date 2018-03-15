@@ -12,8 +12,6 @@ const VideoRow = () => (
     style={{
       width: '100%',
       height: 'auto',
-      marginBottom: '10px',
-      boxShadow: '0 0 0.75rem 5px rgba(0, 0, 0, 0.05)',
     }}
     className="video-section"
     autoPlay
@@ -21,21 +19,27 @@ const VideoRow = () => (
     loop
     playsInline
   >
-    <source src="demo-video-2.mp4" type="video/mp4" />
+    <source src="demo-video-5-hb-2.mp4" type="video/mp4" />
   </video>
 )
 
 const IndexPage = () => (
   <div>
-    <Container>
-      <Title />
-    </Container>
-    <VideoRow />
-    <Container>
-      <LanguagesRow />
-      <FeaturesSection />
-      <CTASection />
-    </Container>
+    <div className="page-section-1">
+      <Container>
+        <Title />
+      </Container>
+      <div className="container video-container">
+        <VideoRow />
+      </div>
+    </div>
+    <div className="page-section-2">
+      <Container>
+        <LanguagesRow />
+        <FeaturesSection />
+        <CTASection />
+      </Container>
+    </div>
   </div>
 )
 

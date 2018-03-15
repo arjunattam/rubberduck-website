@@ -4,13 +4,26 @@
 
 .features-image {
   width: 100%;
+  border: 1px solid #fff;
+}
+
+.features-section .card-body {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #323038;
+}
+
+.features-section .card-title {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #223750;
 }
 
 .features-card {
-  box-shadow: 0 0 0.75rem 5px rgba(0, 0, 0, 0.05);
   height: 390px;
   border: none;
   display: block;
+  background: linear-gradient(180deg, #ffffff, #f5f8ff);
 }
 
 @media only screen and (max-width: 576px) {

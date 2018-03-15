@@ -1,5 +1,5 @@
 .languages-container {
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 .languages-row,
@@ -13,7 +13,7 @@
 .languages-row i {
   font-size: 36px;
   padding: 20px;
-  color: #bbb;
+  color: #707379;
 }
 
 @media only screen and (max-width: 576px) {

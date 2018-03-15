@@ -1,6 +1,15 @@
 .cta-section {
-  background-color: #f5f5f5;
-  margin-top: 30px;
+  background: linear-gradient(60deg, #141e30, #243b55);
+  color: #dee3ea;
+  margin: 40px 15px;
+}
+
+.cta-section h3 {
+  color: #c3ddff;
+}
+
+.cta-row {
+  margin-top: 20px;
 }
 
 @media (min-width: 576px) {
@@ -10,5 +19,9 @@
 
   .cta-input-group {
     width: 400px;
+  }
+
+  .cta-left-col {
+    border-right: 1px solid #304358;
   }
 }
