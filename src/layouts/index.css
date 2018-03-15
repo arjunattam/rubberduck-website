@@ -17,11 +17,11 @@
   background-image: linear-gradient(0deg, #efefef, #fbfbfb 96%);
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
   margin: 0 auto;
-  padding: 60px 0.875rem 100px 1.45rem;
+  padding: 60px 0.875rem 60px 1.45rem;
 }
 
 .page-section-2 .container {
-  max-width: 800px;
+  max-width: 1040px;
 }
 
 @media only screen and (max-width: 576px) {

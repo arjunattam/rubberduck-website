@@ -8,10 +8,10 @@ import filesImg from '../../static/features/feature-3.png'
 
 const FeatureCard = props => (
   <Card className="features-card">
+    <img className="features-image" src={props.img} />
     <CardBody style={{ paddingBottom: '2px' }}>
       <CardTitle>{props.title}</CardTitle>
     </CardBody>
-    <img className="features-image" src={props.img} />
     <CardBody>
       <CardText>{props.text}</CardText>
     </CardBody>
