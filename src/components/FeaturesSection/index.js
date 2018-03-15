@@ -32,7 +32,7 @@ const sections = [
   },
   {
     img: filesImg,
-    title: 'Diff navigation',
+    title: 'Navigate faster',
     text:
       'Navigate the diff with a files tree, and avoid the clueless scrolling.',
   },
@@ -47,13 +47,6 @@ const FeaturesSection = () => (
         </Col>
       )
     })}
-
-    {/* <Col>
-      <FeatureCard img={placeholder} title={'Find usages'} />
-    </Col>
-    <Col>
-      <FeatureCard img={placeholder} title={'Find usages'} />
-    </Col> */}
   </Row>
 )
 
