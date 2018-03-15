@@ -5,6 +5,7 @@ import './index.css'
 
 const twitter = 'https://twitter.com/getrubberduck'
 const email = 'team@karigari.io'
+const wiki = 'https://en.wikipedia.org/wiki/Rubber_duck_debugging'
 
 const ContactSection = () => (
   <div className="contact-section">
@@ -27,8 +28,13 @@ const Footer = () => (
         <RubberduckIcon size="24" />
       </Col>
       <Col md="6" xs="10">
-        <a href={`mailto:${email}`}>Join the team</a> to build a better code
-        reading experience on the web.
+        <div>
+          <a href={`mailto:${email}`}>Join the team</a> to build a better code
+          reading experience on the web.
+        </div>
+        <div style={{ marginTop: 15 }}>
+          Why <a href={wiki}>rubberduck</a>?
+        </div>
       </Col>
       <Col />
       <Col md="3" xs="12">

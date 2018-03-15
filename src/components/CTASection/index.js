@@ -5,6 +5,8 @@ import {
   InputGroup,
   InputGroupAddon,
   Input,
+  Row,
+  Col,
 } from 'reactstrap'
 import './index.css'
 
@@ -119,11 +121,17 @@ class CTASection extends React.Component {
     return (
       <Jumbotron className="cta-section">
         <h3>Rubberduck for your team</h3>
-        <p>
-          Deliver quality output with better code reviews. Rubberduck works with
-          your private repositories, under your internal security requirements.
-        </p>
-        <div>{this.state.isSubmitted ? success : form}</div>
+        <Row className="cta-row">
+          <Col className="cta-left-col" md="6" xs="12">
+            <p>
+              Deliver quality output with better code reviews. Rubberduck works
+              with your private repositories, within your security requirements.
+            </p>
+          </Col>
+          <Col md="6" xs="12">
+            <div>{this.state.isSubmitted ? success : form}</div>
+          </Col>
+        </Row>
       </Jumbotron>
     )
   }

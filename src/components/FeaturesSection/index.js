@@ -2,9 +2,9 @@ import React from 'react'
 import { Row, Col } from 'reactstrap'
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap'
 import './index.css'
-import referencesImg from '../../static/features/feature-1.png'
-import definitionsImg from '../../static/features/feature-2.png'
-import filesImg from '../../static/features/feature-3.png'
+import referencesImg from '../../static/features/feature-1-2x.png'
+import definitionsImg from '../../static/features/feature-2-2x.png'
+import filesImg from '../../static/features/feature-3-2x.png'
 
 const FeatureCard = props => (
   <Card className="features-card">
