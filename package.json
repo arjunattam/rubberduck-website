@@ -14,9 +14,7 @@
     "react-helmet": "^5.2.0",
     "reactstrap": "5.0.0-beta"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf public/",
@@ -24,8 +22,10 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "gsclean": "gsutil -m rm \"gs://www.rubberduck.io/**\"",
     "deploy": "gsutil -m cp -r public/* gs://www.rubberduck.io",
-    "permissions": "gsutil -m acl ch -u AllUsers:R \"gs://www.rubberduck.io/**\"",
+    "permissions":
+      "gsutil -m acl ch -u AllUsers:R \"gs://www.rubberduck.io/**\"",
     "push": "gatsby build && npm run deploy && npm run permissions"
   },
   "devDependencies": {

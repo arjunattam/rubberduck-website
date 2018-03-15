@@ -1,6 +1,6 @@
 .cta-section {
-  background: none;
-  margin-top: 30px;
+  background: #fff;
+  margin: 30px 15px;
 }
 
 @media (min-width: 576px) {
