@@ -20,10 +20,13 @@
 }
 
 .features-card {
-  height: 390px;
   border: none;
   display: block;
   background: linear-gradient(180deg, #ffffff, #f5f8ff);
+}
+
+.feature-card-inner {
+  height: 160px;
 }
 
 @media only screen and (max-width: 576px) {

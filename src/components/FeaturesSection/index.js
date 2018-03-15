@@ -9,12 +9,14 @@ import filesImg from '../../static/features/feature-3-2x.png'
 const FeatureCard = props => (
   <Card className="features-card">
     <img className="features-image" src={props.img} />
-    <CardBody style={{ paddingBottom: '2px' }}>
-      <CardTitle>{props.title}</CardTitle>
-    </CardBody>
-    <CardBody>
-      <CardText>{props.text}</CardText>
-    </CardBody>
+    <div className="feature-card-inner">
+      <CardBody style={{ paddingBottom: '2px' }}>
+        <CardTitle>{props.title}</CardTitle>
+      </CardBody>
+      <CardBody>
+        <CardText>{props.text}</CardText>
+      </CardBody>
+    </div>
   </Card>
 )
 
@@ -42,7 +44,7 @@ const FeaturesSection = () => (
   <Row className="features-section">
     {sections.map(element => {
       return (
-        <Col xs="12" md="4" key={element.title}>
+        <Col xs="12" md="4" sm="4" key={element.title}>
           <FeatureCard {...element} />
         </Col>
       )
