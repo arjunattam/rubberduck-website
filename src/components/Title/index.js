@@ -5,7 +5,7 @@ import RubberduckIcon from '../icon'
 import './index.css'
 
 export const description =
-  'IDE capabilities in your browser, for better code reviews on GitHub'
+  'Faster code reviews on GitHub with code-aware navigation'
 
 class Title extends React.Component {
   render() {

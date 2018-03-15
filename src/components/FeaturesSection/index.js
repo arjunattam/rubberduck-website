@@ -23,18 +23,18 @@ const sections = [
     img: referencesImg,
     title: 'Find usages',
     text:
-      'Find where your methods are called from, and where your classes are instantiated.',
+      'Find where your methods are called from, without leaving the diff view.',
   },
   {
     img: definitionsImg,
     title: 'Open definitions',
-    text: 'Glance method and class code snippets right next to the diff view.',
+    text:
+      'Glance method and class definition snippets right next to the git diff.',
   },
   {
     img: filesImg,
     title: 'Navigate faster',
-    text:
-      'Navigate the diff with a files tree, and avoid the clueless scrolling.',
+    text: 'Navigate the diff with a files tree, to avoid scrolling cluelessly.',
   },
 ]
 

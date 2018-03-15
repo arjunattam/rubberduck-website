@@ -14,13 +14,13 @@
 }
 
 .features-section .card-title {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   margin-bottom: 0.5rem;
   color: #223750;
 }
 
 .features-card {
-  height: 400px;
+  height: 390px;
   border: none;
   display: block;
   background: linear-gradient(180deg, #ffffff, #f5f8ff);
