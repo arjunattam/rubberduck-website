@@ -8,10 +8,11 @@ const LanguagesRow = () => (
     {/* <Row className="languages-header">Supported languages</Row> */}
     <Row className="languages-row">
       <i className="devicon-python-plain" />
-      <i className="devicon-javascript-plain" />
-      <i className="devicon-typescript-plain" />
       <i className="devicon-java-plain" />
       <i className="devicon-android-plain" />
+      <i className="devicon-javascript-plain" />
+      <i className="devicon-typescript-plain" />
+      <i className="devicon-go-plain" />
     </Row>
   </div>
 )
