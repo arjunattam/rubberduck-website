@@ -1,0 +1,21 @@
+{
+  "key": "rubberduck-v1",
+  "name": "Rubberduck",
+  "description": "An example app for Bitbucket",
+  "vendor": {
+    "name": "Rubberduck",
+    "url": "https://www.rubberduck.io"
+  },
+  "baseUrl": "https://example.com",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {},
+  "modules": {
+    "oauthConsumer": {
+      "clientId": "{{consumerKey}}"
+    }
+  },
+  "scopes": ["account", "repository"],
+  "contexts": ["account"]
+}
