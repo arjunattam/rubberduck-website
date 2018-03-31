@@ -6,7 +6,7 @@
     "name": "Rubberduck",
     "url": "https://www.rubberduck.io"
   },
-  "baseUrl": "https://www.codeview.io",
+  "baseUrl": "https://www.codeview.io/bitbucket_oauth_redirect/",
   "authentication": {
     "type": "jwt"
   },
