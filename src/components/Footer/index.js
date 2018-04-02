@@ -4,7 +4,7 @@ import RubberduckIcon from '../icon'
 import './index.css'
 
 const twitter = 'https://twitter.com/getrubberduck'
-const email = 'team@karigari.io'
+const email = 'team@rubberduck.io'
 const wiki = 'https://en.wikipedia.org/wiki/Rubber_duck_debugging'
 
 const ContactSection = () => (
