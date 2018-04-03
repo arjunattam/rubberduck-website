@@ -12,13 +12,12 @@
 
 .languages-row i {
   font-size: 36px;
-  padding: 20px;
+  padding: 0.8rem;
   color: #707379;
 }
 
 @media only screen and (max-width: 576px) {
   .languages-row i {
     font-size: 24px;
-    padding: 15px;
   }
 }

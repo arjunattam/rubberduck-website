@@ -11,7 +11,7 @@ import { description } from '../components/Title'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Rubberduck | Better code reviews on GitHub"
+      title="Rubberduck | Faster code reviews on GitHub"
       meta={[
         {
           name: 'description',
