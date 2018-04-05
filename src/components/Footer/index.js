@@ -32,10 +32,8 @@ const ContactSection = () => (
 const Footer = () => (
   <Container>
     <Row className="footer-row">
-      <Col className="footer-logo-section">
+      <Col md="6" xs="12">
         <RubberduckIcon size="24" />
-      </Col>
-      <Col md="6" xs="10">
         <div>
           <a href={`mailto:${email}`}>Join the team</a> to build a better code
           reading experience on the web.
@@ -44,8 +42,7 @@ const Footer = () => (
           Why <a href={wiki}>rubberduck</a>?
         </div>
       </Col>
-      <Col />
-      <Col md="3" xs="12">
+      <Col md="6" xs="12">
         <ContactSection />
       </Col>
     </Row>
