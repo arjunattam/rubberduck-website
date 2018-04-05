@@ -1,0 +1,21 @@
+{
+  "key": "rubberduck-v1",
+  "name": "Rubberduck",
+  "description": "An example app for Bitbucket",
+  "vendor": {
+    "name": "Rubberduck",
+    "url": "https://www.rubberduck.io"
+  },
+  "baseUrl": "https://www.codeview.io/bitbucket_oauth_redirect/",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {},
+  "modules": {
+    "oauthConsumer": {
+      "clientId": "fkAr3pyFpv8MMZXQTp"
+    }
+  },
+  "scopes": ["account", "repository"],
+  "contexts": ["account"]
+}
