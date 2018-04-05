@@ -1,12 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+const getTitle = title => `Rubberduck blog: ${title}`
+
 export default function Template({ data }) {
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
   return (
     <div className="page-section-1">
       <div className="container blog-post-container">
-        <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+        <Helmet title={getTitle(post.frontmatter.title)} />
         <div className="blog-post">
           <h1>{post.frontmatter.title}</h1>
           <div
