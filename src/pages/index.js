@@ -5,6 +5,7 @@ import { Container } from 'reactstrap'
 import LanguagesRow from '../components/LanguagesRow'
 import FeaturesSection from '../components/FeaturesSection'
 import CTASection from '../components/CTASection'
+import ProductsSection from '../components/ProductsSection'
 import Title from '../components/Title'
 
 const VideoRow = () => (
@@ -36,8 +37,9 @@ const IndexPage = () => (
     <div className="page-section-2">
       <Container>
         <LanguagesRow />
-        <FeaturesSection />
-        <CTASection />
+        {/* <FeaturesSection /> */}
+        {/* <CTASection /> */}
+        <ProductsSection />
       </Container>
     </div>
   </div>
