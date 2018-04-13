@@ -1,24 +1,29 @@
-.title-row h1 {
-  margin-bottom: 0;
+.title {
+  padding: 10px 0;
+  background-color: #f8f8fb;
+  border-bottom: 1px solid rgba(239, 234, 255, 0.65);
 }
 
-.logo-section {
-  flex: 0 0 72px;
-}
-
-.install-section {
+.title-row {
+  max-width: 800px;
+  margin: 0 auto;
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 576px) {
-  .title-row h1 {
-    font-size: 2em;
-  }
+.title-row h1 {
+  display: inline-block;
+  margin-left: 10px;
+  margin: 3px 0 0 10px;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
 
-  .install-section {
-    justify-content: center;
-    margin: 10px 0;
-  }
+.title-row svg {
+  vertical-align: middle;
+}
+
+.title-row .install-col {
+  text-align: right;
 }

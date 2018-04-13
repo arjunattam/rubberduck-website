@@ -1,11 +1,10 @@
 /* Page styling */
-.page-section-1 {
-  margin: 30px auto 0 auto;
-  padding: 0 0.875rem 0 1.45rem;
+body {
+  font-family: avenir;
 }
 
-.page-section-1 .container {
-  max-width: 800px;
+.page-section-1 {
+  padding: 0 0.875rem 0 1.45rem;
 }
 
 .page-section-1 .video-container {
@@ -39,23 +38,11 @@
   }
 }
 
-/* Setup google fonts */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol'; */
-}
-
 h1 {
   font-weight: 600;
 }
 
-/* Overriding color */
+/* Overriding the shade of blue */
 .btn-primary {
   background-color: #2a68c1;
   border-color: #2a68c1;

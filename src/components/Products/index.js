@@ -9,6 +9,7 @@ import {
   Card,
   CardBody,
   CardTitle,
+  Container,
 } from 'reactstrap'
 import './index.css'
 
@@ -16,6 +17,7 @@ const ProductCard = props => (
   <Card className="product-card">
     <CardBody className="title-body">
       <CardTitle>{props.title}</CardTitle>
+      <div className="tagline">{props.tagline}</div>
     </CardBody>
     <CardBody>
       <ul>{props.textList.map(element => <li key={element}>{element}</li>)}</ul>
@@ -32,6 +34,7 @@ const ProductCard = props => (
 const OpenSourceCard = props => (
   <ProductCard
     title={'For open source'}
+    tagline={'Hosted by us'}
     textList={[
       'Unlimited open source repositories',
       'Supports GitHub.com',
@@ -52,6 +55,7 @@ const price = (
 const PrivateSourceCard = props => (
   <ProductCard
     title={'For private repositories'}
+    tagline={'Runs on localhost'}
     textList={[
       'Unlimited private repositories',
       'Built for security, your code does not leave your machine',
@@ -63,7 +67,7 @@ const PrivateSourceCard = props => (
   />
 )
 
-export default class ProductsSection extends React.Component {
+class ProductsSection extends React.Component {
   state = {
     isLoading: false,
     isSubmitted: false,
@@ -89,3 +93,13 @@ export default class ProductsSection extends React.Component {
     )
   }
 }
+
+const ProductContainer = () => (
+  <div className="product-section">
+    <Container>
+      <ProductsSection />
+    </Container>
+  </div>
+)
+
+export default ProductContainer

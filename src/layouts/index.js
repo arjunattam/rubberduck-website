@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
+import Title from '../components/Title'
 import Footer from '../components/Footer'
 import favicon from '../static/icon-16.png'
 import { description } from '../components/Title'
@@ -27,6 +28,7 @@ const TemplateWrapper = ({ children }) => (
       />
     </Helmet>
     <div>
+      <Title />
       {children()}
       <Footer />
     </div>

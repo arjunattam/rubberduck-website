@@ -30,23 +30,25 @@ const ContactSection = () => (
 )
 
 const Footer = () => (
-  <Container>
-    <Row className="footer-row">
-      <Col md="6" xs="12">
-        <RubberduckIcon size="24" />
-        <div>
-          <a href={`mailto:${email}`}>Join the team</a> to build a better code
-          reading experience on the web.
-        </div>
-        <div style={{ marginTop: 15 }}>
-          Why <a href={wiki}>rubberduck</a>?
-        </div>
-      </Col>
-      <Col md="6" xs="12">
-        <ContactSection />
-      </Col>
-    </Row>
-  </Container>
+  <div className="footer">
+    <Container>
+      <Row className="footer-row">
+        <Col md="6" xs="12">
+          <RubberduckIcon size="24" />
+          <div>
+            <a href={`mailto:${email}`}>Join the team</a> to build a better code
+            reading experience on the web.
+          </div>
+          <div style={{ marginTop: 15 }}>
+            Why <a href={wiki}>rubberduck</a>?
+          </div>
+        </Col>
+        <Col md="6" xs="12">
+          <ContactSection />
+        </Col>
+      </Row>
+    </Container>
+  </div>
 )
 
 export default Footer

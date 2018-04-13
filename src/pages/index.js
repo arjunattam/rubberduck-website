@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'reactstrap'
 
+import Lead from '../components/Lead'
 import LanguagesRow from '../components/LanguagesRow'
 import FeaturesSection from '../components/FeaturesSection'
 import CTASection from '../components/CTASection'
-import ProductsSection from '../components/ProductsSection'
-import Title from '../components/Title'
+import ProductContainer from '../components/Products'
 
 const VideoRow = () => (
   <video
@@ -27,21 +27,19 @@ const VideoRow = () => (
 const IndexPage = () => (
   <div>
     <div className="page-section-1">
-      <Container>
-        <Title />
-      </Container>
       <div className="container video-container">
+        <Lead />
         <VideoRow />
       </div>
     </div>
     <div className="page-section-2">
       <Container>
         <LanguagesRow />
-        {/* <FeaturesSection /> */}
-        {/* <CTASection /> */}
-        <ProductsSection />
+        <FeaturesSection />
+        <CTASection />
       </Container>
     </div>
+    <ProductContainer />
   </div>
 )
 
