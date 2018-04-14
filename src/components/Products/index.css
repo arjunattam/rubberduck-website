@@ -1,12 +1,9 @@
-.product-section {
-  background-color: #f8f8fb;
-}
-
 .product-card {
+  background-color: #eff0ff;
+  border: 1px solid rgb(102, 103, 134);
   padding: 20px;
   height: 550px;
-  box-shadow: 0 0 4px 1px rgba(60, 60, 60, 0.07);
-  border-radius: 0;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
 }
 
 .product-card .title-body {
@@ -40,7 +37,7 @@
 }
 
 .product-card ul li {
-  border-top: 1px solid #f4f4f5;
+  border-bottom: 1px solid rgba(60, 60, 60, 0.1);
   height: 70px;
   display: flex;
   align-items: center;

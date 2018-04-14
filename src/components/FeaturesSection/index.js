@@ -5,10 +5,11 @@ import './index.css'
 import referencesImg from '../../static/features/feature-1-2x.png'
 import definitionsImg from '../../static/features/feature-2-2x.png'
 import filesImg from '../../static/features/feature-3-2x.png'
+import FeatureImage from './Image'
 
 const FeatureCard = props => (
   <Card className="features-card">
-    <img className="features-image" src={props.img} />
+    <FeatureImage src={props.img} />
     <div className="feature-card-inner">
       <CardBody style={{ paddingBottom: '2px' }}>
         <CardTitle>{props.title}</CardTitle>
@@ -23,20 +24,33 @@ const FeatureCard = props => (
 const sections = [
   {
     img: referencesImg,
-    title: 'Find usages',
-    text:
-      'Find where your methods are called from, without leaving the diff view.',
+    title: 'Speed up comprehension',
+    text: (
+      <span>
+        Find symbols usages and definitions, across the repository with{' '}
+        <span className="keyboard-shortcut">{'⌘ + click'}</span>.
+      </span>
+    ),
   },
   {
     img: definitionsImg,
-    title: 'Open definitions',
-    text:
-      'Glance method and class definition snippets right next to the git diff.',
+    title: 'Avoid context switches',
+    text: (
+      <span>
+        Glance inline documentation where you need it the most. Press{' '}
+        <span className="keyboard-shortcut">{'⌘'}</span> to see more.
+      </span>
+    ),
   },
   {
     img: filesImg,
-    title: 'Navigate faster',
-    text: 'Navigate the diff with a files tree, to avoid scrolling cluelessly.',
+    title: 'Navigate in control',
+    text: (
+      <span>
+        Use the diff files tree to get the hierarchical view, instead of scroll
+        cluelessly on the flat diff.
+      </span>
+    ),
   },
 ]
 

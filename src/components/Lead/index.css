@@ -1,4 +1,12 @@
 .lead-container {
-  padding: 50px 0;
+  padding: 40px 0 30px;
   text-align: center;
+}
+
+.lead-container h2 {
+  color: #29293b;
+}
+
+.lead-container h4 {
+  color: #8384ab;
 }

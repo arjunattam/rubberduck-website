@@ -170,7 +170,7 @@ class ProductsSection extends React.Component {
 }
 
 const ProductContainer = () => (
-  <div className="product-section blueprint main-section">
+  <div className="product-section dark-blueprint main-section">
     <Container>
       <ProductsSection />
     </Container>

@@ -1,5 +1,6 @@
-.languages-container {
-  margin: 40px 0px;
+.languages-container .container {
+  padding: 20px 0;
+  text-align: center;
 }
 
 .languages-row,
