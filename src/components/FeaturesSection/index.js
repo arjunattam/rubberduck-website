@@ -2,10 +2,13 @@ import React from 'react'
 import { Row, Col, Container } from 'reactstrap'
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap'
 import './index.css'
-import referencesImg from '../../static/features/feature-1-2x.png'
-import definitionsImg from '../../static/features/feature-2-2x.png'
-import filesImg from '../../static/features/feature-3-2x.png'
 import FeatureImage from './Image'
+import hoverBigImg from '../../static/features/hover-big.png'
+import hoverImg from '../../static/features/hover-small.png'
+import usagesBigImg from '../../static/features/usages-big.png'
+import usagesImg from '../../static/features/usages-small.png'
+import treeBigImg from '../../static/features/tree-big.png'
+import treeImg from '../../static/features/tree-small.png'
 
 const FeatureCard = props => (
   <Card className="features-card">
@@ -23,7 +26,8 @@ const FeatureCard = props => (
 
 const sections = [
   {
-    img: referencesImg,
+    img: usagesImg,
+    bigImg: usagesBigImg,
     title: 'Speed up comprehension',
     text: (
       <span>
@@ -33,7 +37,8 @@ const sections = [
     ),
   },
   {
-    img: definitionsImg,
+    img: hoverImg,
+    bigImg: hoverBigImg,
     title: 'Avoid context switches',
     text: (
       <span>
@@ -43,8 +48,9 @@ const sections = [
     ),
   },
   {
-    img: filesImg,
-    title: 'Navigate in control',
+    img: treeImg,
+    bigImg: treeBigImg,
+    title: 'Navigate with control',
     text: (
       <span>
         Use the diff files tree to get the hierarchical view, instead of scroll

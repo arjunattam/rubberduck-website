@@ -28,3 +28,9 @@
 .title-row .install-col {
   text-align: right;
 }
+
+@media only screen and (max-width: 576px) {
+  .title-row .install-col {
+    display: none;
+  }
+}

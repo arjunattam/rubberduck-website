@@ -16,20 +16,25 @@ const ContactSection = () => (
           <h3>How can we help?</h3>
           <p>
             We are eager to listen to your feedback, feature requests, and
-            understand your internal workflow — to{' '}
-            <span className="underlined">
-              help your team deliver quality outcomes
-            </span>. Reach out to us!
+            understand your internal workflow — to help{' '}
+            <span className="highlight">
+              your team deliver quality outcomes
+            </span>. Reach out to us.
           </p>
         </Col>
         <Col md="4" xs="12" className="contact-buttons">
           <p>
-            <CustomButton text={'team@rubberduck.io'} width={200} />
+            <CustomButton
+              text={'team@rubberduck.io'}
+              width={200}
+              href={`mailto:${email}`}
+            />
           </p>
           <p>
             <CustomButton
               text={'@getrubberduck'}
               icon={'devicon-twitter-plain'}
+              href={twitter}
               width={200}
             />
           </p>
@@ -37,6 +42,7 @@ const ContactSection = () => (
             <CustomButton
               text={'Join our Slack'}
               icon={'devicon-slack-plain'}
+              href={slack}
               width={200}
             />
           </p>

@@ -27,6 +27,7 @@ const TemplateWrapper = ({ children }) => (
         rel="chrome-webstore-item"
         href="https://chrome.google.com/webstore/detail/nopekhgebkpkbjoclackdlofmcpokgmc"
       />
+      <link rel="stylesheet" href="/node_modules/picbig/lib/picbig.css" />
     </Helmet>
     <div>
       <Title />

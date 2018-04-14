@@ -5,11 +5,11 @@
 }
 
 .footer a {
-  color: #f8e71c;
+  color: #f5f294;
 }
 
 .footer a:hover {
-  color: #eba844;
+  color: #f8e71c;
 }
 
 .footer .col-2 {
@@ -20,5 +20,6 @@
 @media only screen and (max-width: 576px) {
   .footer .col-2 {
     text-align: left;
+    padding-top: 25px;
   }
 }

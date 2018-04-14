@@ -13,6 +13,7 @@ import {
 } from 'reactstrap'
 import { makeAPICalls } from './utils'
 import './index.css'
+import { InstallButton } from '../Title'
 
 class CTA extends React.Component {
   state = {
@@ -69,7 +70,7 @@ class CTA extends React.Component {
             </div>
           </form>
         ) : (
-          <Button className="btn btn-primary">{text}</Button>
+          <InstallButton />
         )}
 
         <div className="cta-sub" children={subText} />

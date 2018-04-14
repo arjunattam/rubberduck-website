@@ -22,7 +22,7 @@ const triggerInstall = event => {
   }
 }
 
-const InstallButton = () => (
+export const InstallButton = () => (
   <CustomButton
     text={'Install in your browser'}
     href={downloadLink}
@@ -35,7 +35,7 @@ const Title = () => (
   <div className="title">
     <Container>
       <Row className="title-row">
-        <Col md="8" className="logo-col">
+        <Col xs="12" md="8" className="logo-col">
           <RubberduckIcon size="32" />
           <h1>Rubberduck</h1>
         </Col>
