@@ -53,8 +53,8 @@ const sections = [
     title: 'Navigate with control',
     text: (
       <span>
-        Use the diff files tree to get the hierarchical view, instead of scroll
-        cluelessly on the flat diff.
+        Use the diff files tree to get the hierarchical view, instead of
+        scrolling cluelessly on the flat diff.
       </span>
     ),
   },
