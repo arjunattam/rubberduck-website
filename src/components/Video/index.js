@@ -9,7 +9,6 @@ const VideoRow = () => (
     }}
     className="video-section"
     autoPlay
-    controls
     muted
     loop
     playsInline

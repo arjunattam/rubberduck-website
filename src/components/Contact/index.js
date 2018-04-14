@@ -17,22 +17,22 @@ const ContactSection = () => (
             </span>. Reach out to us!
           </p>
         </Col>
-        <Col md="4" xs="12" style={{ textAlign: 'center' }}>
+        <Col md="4" xs="12" className="contact-buttons">
           <p>
-            <CustomButton text={'team@rubberduck.io'} width={180} />
+            <CustomButton text={'team@rubberduck.io'} width={200} />
           </p>
           <p>
             <CustomButton
               text={'@getrubberduck'}
               icon={'devicon-twitter-plain'}
-              width={180}
+              width={200}
             />
           </p>
           <p>
             <CustomButton
               text={'Join our Slack'}
               icon={'devicon-slack-plain'}
-              width={180}
+              width={200}
             />
           </p>
         </Col>

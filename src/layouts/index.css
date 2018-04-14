@@ -101,8 +101,8 @@ body {
 
 /* Overriding the shade of blue */
 .btn-primary {
-  background-color: #2a68c1;
-  border-color: #2a68c1;
+  background-color: #4a4a92;
+  border-color: #4a4a92;
 }
 
 .btn-primary-2 {
@@ -112,8 +112,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #8181d6;
+  border-color: #8181d6;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   transform: translateY(-1px);
 }

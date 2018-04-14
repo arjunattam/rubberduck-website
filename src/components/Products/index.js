@@ -69,7 +69,7 @@ class CTA extends React.Component {
             </div>
           </form>
         ) : (
-          <Button className="btn btn-primary btn-primary-2">{text}</Button>
+          <Button className="btn btn-primary">{text}</Button>
         )}
 
         <div className="cta-sub" children={subText} />
