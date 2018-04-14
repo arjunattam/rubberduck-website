@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, Container } from 'reactstrap'
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap'
 import './index.css'
 import referencesImg from '../../static/features/feature-1-2x.png'
@@ -41,15 +41,19 @@ const sections = [
 ]
 
 const FeaturesSection = () => (
-  <Row className="features-section">
-    {sections.map(element => {
-      return (
-        <Col xs="12" md="4" sm="4" key={element.title}>
-          <FeatureCard {...element} />
-        </Col>
-      )
-    })}
-  </Row>
+  <div className="features-section main-section blueprint">
+    <Container>
+      <Row>
+        {sections.map(element => {
+          return (
+            <Col xs="12" md="4" sm="4" key={element.title}>
+              <FeatureCard {...element} />
+            </Col>
+          )
+        })}
+      </Row>
+    </Container>
+  </div>
 )
 
 export default FeaturesSection

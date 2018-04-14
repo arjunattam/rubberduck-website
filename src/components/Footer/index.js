@@ -30,16 +30,16 @@ const ContactSection = () => (
 )
 
 const Footer = () => (
-  <div className="footer">
+  <div className="footer main-section">
     <Container>
-      <Row className="footer-row">
+      <Row>
         <Col md="6" xs="12">
           <RubberduckIcon size="24" />
           <div>
             <a href={`mailto:${email}`}>Join the team</a> to build a better code
             reading experience on the web.
           </div>
-          <div style={{ marginTop: 15 }}>
+          <div style={{ marginTop: 20 }}>
             Why <a href={wiki}>rubberduck</a>?
           </div>
         </Col>

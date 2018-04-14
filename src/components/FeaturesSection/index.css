@@ -2,6 +2,10 @@
   margin: 20px 0;
 }
 
+.features-section .container {
+  max-width: 1040px;
+}
+
 .features-image {
   width: 100%;
   border: 1px solid #fff;
@@ -22,7 +26,7 @@
 .features-card {
   border: none;
   display: block;
-  background: linear-gradient(180deg, #ffffff, #f5f8ff);
+  background-color: #edeff9;
   border-radius: 0.75rem;
 }
 

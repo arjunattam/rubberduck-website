@@ -5,8 +5,8 @@ import { Container } from 'reactstrap'
 import Lead from '../components/Lead'
 import LanguagesRow from '../components/LanguagesRow'
 import FeaturesSection from '../components/FeaturesSection'
-import CTASection from '../components/CTASection'
 import ProductContainer from '../components/Products'
+import ContactSection from '../components/Contact'
 
 const VideoRow = () => (
   <video
@@ -32,14 +32,16 @@ const IndexPage = () => (
         <VideoRow />
       </div>
     </div>
-    <div className="page-section-2">
-      <Container>
-        <LanguagesRow />
-        <FeaturesSection />
-        <CTASection />
-      </Container>
-    </div>
+
+    {/* <div className="page-section-2" /> */}
+    <FeaturesSection />
+
+    <Container>
+      <LanguagesRow />
+    </Container>
+
     <ProductContainer />
+    <ContactSection />
   </div>
 )
 

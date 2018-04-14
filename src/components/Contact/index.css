@@ -1,0 +1,10 @@
+.contact-container {
+  background-color: rgba(188, 193, 216, 0.5);
+  border-top: 3px solid rgba(90, 90, 134, 0.2);
+}
+
+.contact-container h3 {
+  border-bottom: 3px solid #c6c8d9;
+  display: inline-block;
+  margin-bottom: 20px;
+}

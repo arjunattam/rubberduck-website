@@ -1,13 +1,16 @@
 .product-section {
-  margin: 40px 0;
-  padding: 30px 0;
-  border-top: 1px solid rgba(239, 234, 255, 0.65);
-  border-bottom: 1px solid rgba(239, 234, 255, 0.65);
   background-color: #f8f8fb;
 }
 
 .product-card {
   padding: 20px;
+  height: 550px;
+  box-shadow: 0 0 4px 1px rgba(60, 60, 60, 0.07);
+  border-radius: 0;
+}
+
+.product-card .title-body {
+  height: 90px;
 }
 
 .product-card h5 {
@@ -17,6 +20,7 @@
 
 .product-card .tagline {
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .product-card .card-body {
@@ -42,34 +46,29 @@
   align-items: center;
 }
 
-.strikethrough {
-  position: relative;
-}
-
-.strikethrough:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 50%;
-  right: 0;
-  border-top: 2px solid;
-  border-color: inherit;
-  transform: rotate(-25deg);
-}
-
-.highlight {
-  text-transform: uppercase;
+.cta-sub {
   font-size: 14px;
-  padding: 2px;
   text-align: center;
-  color: #000;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.cta-vertical-group {
+  flex-direction: column;
+  width: 245px;
   margin: 0 auto;
-  width: 200px;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(250, 247, 133, 0.3),
-    rgba(250, 247, 133, 0.7) 95%,
-    rgba(250, 247, 133, 0.1)
-  );
+}
+
+.cta-vertical-group input {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 245px;
+  text-align: center;
+}
+
+.cta-vertical-group .btn {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: 245px;
+  margin-top: -1px;
 }
