@@ -3,6 +3,11 @@ import { Container, Row, Col } from 'reactstrap'
 import CustomButton from '../CustomButton'
 import './index.css'
 
+const twitter = 'https://twitter.com/getrubberduck'
+const email = 'team@rubberduck.io'
+const slack =
+  'https://join.slack.com/t/karigarihq/shared_invite/enQtMzM5NzQxNjQxNTA1LTM0ZDFhNWQ3YmEyYmExZTY1ODJmM2U3NzExM2E0YmQxODcxYTgwYzczOTVkOGY5ODk2MWE0MzE2ODliNGU1ZDc'
+
 const ContactSection = () => (
   <div className="contact-container main-section">
     <Container>

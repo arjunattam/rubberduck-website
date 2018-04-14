@@ -83,10 +83,6 @@ const ProductCard = props => (
     <CardBody className="title-body">
       <CardTitle>{props.title}</CardTitle>
       <div className="tagline">{props.tagline}</div>
-
-      {props.highlight ? (
-        <div className="highlight" children={props.highlight} />
-      ) : null}
     </CardBody>
 
     <CardBody>
@@ -106,12 +102,11 @@ const ProductCard = props => (
 const OpenSourceCard = props => (
   <ProductCard
     title={'For open source'}
-    tagline={'Hosted by us'}
+    tagline={'Backend hosted by us + Browser extension.'}
     textList={[
-      'Free to use',
-      'Supports GitHub.com and Bitbucket Cloud',
-      'No usage limits. Unlimited open source repositories.',
-      'Auto-updates for feature upgrades and new languages',
+      'Free to use. Unlimited open source repositories.',
+      'Supports GitHub.com and Bitbucket Cloud.',
+      'Auto-updates for feature upgrades and new language support.',
     ]}
     ctaText={'Install in your browser'}
   />
@@ -128,16 +123,18 @@ const price = (
 const PrivateSourceCard = props => (
   <ProductCard
     title={'For private repositories'}
-    tagline={'Runs on your localhost'}
+    tagline={
+      <span>
+        Backend as a menu bar app + Browser extension.{' '}
+        <span className="highlight">Available May 2018.</span>
+      </span>
+    }
     textList={[
-      'Everything in free, and more',
-      'Built for security: your code does not leave your machine',
-      'Supports GitHub Enterprise, Bitbucket Server and GitLab',
-      'Unlimited private or open source repositories',
+      'Built for security: your code does not leave your machine.',
+      'Supports GitHub.com, GitHub Enterprise, Bitbucket Cloud, Bitbucket Server and GitLab.',
     ]}
     ctaText={price}
     ctaSubtext={'Includes a year of updates and 7 day free trial'}
-    highlight={'Available in May 2018'}
     hasInput={true}
   />
 )

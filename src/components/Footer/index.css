@@ -12,41 +12,13 @@
   color: #eba844;
 }
 
-.footer-logo-section {
-  flex: 0 0 30px;
-  padding-right: 0px;
-}
-
-.contact-section {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
-  color: #bbb;
-}
-
-.contact-section div {
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-.contact-section div:first-child {
-  margin-left: 0;
-}
-
-.contact-section div:last-child {
-  margin-right: 0;
-}
-
-.contact-section a:hover {
-  text-decoration: none;
+.footer .col-2 {
+  text-align: right;
+  padding-top: 40px;
 }
 
 @media only screen and (max-width: 576px) {
-  .contact-section {
-    margin-top: 22px;
-    width: auto;
-    justify-content: flex-start;
+  .footer .col-2 {
+    text-align: left;
   }
 }
