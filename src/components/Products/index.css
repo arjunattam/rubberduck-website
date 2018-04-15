@@ -8,10 +8,6 @@
 .product-card .title-body {
   height: 100px;
 }
-/* 
-.product-card .card-title {
-  margin-bottom: 0.25rem;
-} */
 
 .product-card h5 {
   color: #05070a;
@@ -41,7 +37,7 @@
 
 .product-card ul li {
   border-top: 1px solid rgba(60, 60, 60, 0.1);
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .cta-sub {

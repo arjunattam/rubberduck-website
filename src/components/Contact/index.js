@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import CustomButton from '../CustomButton'
+import MailIcon from '../mail'
+import 'devicon/devicon.css'
 import './index.css'
 
 const twitter = 'https://twitter.com/getrubberduck'
@@ -21,30 +22,33 @@ const ContactSection = () => (
             out to us.
           </p>
         </Col>
-        <Col md="4" xs="12" className="contact-buttons">
-          <p>
-            <CustomButton
-              text={'team@rubberduck.io'}
-              width={200}
-              href={`mailto:${email}`}
-            />
-          </p>
-          <p>
-            <CustomButton
-              text={'@getrubberduck'}
-              icon={'devicon-twitter-plain'}
-              href={twitter}
-              width={200}
-            />
-          </p>
-          <p>
-            <CustomButton
-              text={'Join our Slack'}
-              icon={'devicon-slack-plain'}
-              href={slack}
-              width={200}
-            />
-          </p>
+        <Col md="4" xs="12">
+          <ul>
+            <li>
+              <div>
+                <MailIcon size={24} />
+              </div>
+              <div>
+                <a href={`mailto:${email}`}>{email}</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <i className="devicon-twitter-plain" style={{ fontSize: 20 }} />
+              </div>
+              <div>
+                <a href={twitter}>{'@getrubberduck'}</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <i className="devicon-slack-plain" style={{ fontSize: 24 }} />
+              </div>
+              <div>
+                <a href={slack}>{'Join our Slack'}</a>
+              </div>
+            </li>
+          </ul>
         </Col>
       </Row>
     </Container>

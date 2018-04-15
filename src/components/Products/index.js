@@ -29,9 +29,7 @@ class CTA extends React.Component {
   }
 
   sendRequest = evt => {
-    console.log('attempting to prevent default')
     evt.preventDefault()
-    console.log('done')
     this.setState({
       isLoading: true,
     })
@@ -46,7 +44,6 @@ class CTA extends React.Component {
 
   render() {
     const { hasInput, text, subText } = this.props
-    console.log('render called')
     return (
       <div>
         {hasInput ? (
@@ -106,7 +103,7 @@ const ProductCard = props => (
 const OpenSourceCard = props => (
   <ProductCard
     title={'For open source'}
-    tagline={'Backend hosted by us + Browser extension.'}
+    tagline={'Browser extension + Backend hosted by us.'}
     textList={[
       'Free to use. Unlimited open source repositories.',
       'Supports GitHub.com and Bitbucket Cloud.',
@@ -129,7 +126,7 @@ const PrivateSourceCard = props => (
     title={'For private repositories'}
     tagline={
       <span>
-        Backend as a menu bar app + Browser extension.{' '}
+        Browser extension + Backend as a menu bar app.{' '}
         <span className="highlight">Available May 2018.</span>
       </span>
     }

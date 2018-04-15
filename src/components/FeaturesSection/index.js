@@ -31,8 +31,9 @@ const sections = [
     title: 'Speed up comprehension',
     text: (
       <span>
-        Find symbols usages and definitions, across the repository with{' '}
-        <span className="keyboard-shortcut">{'⌘ + click'}</span>.
+        <span className="keyboard-shortcut">{'⌘ + click'}</span> on your symbols
+        to find out where they are used and defined — across the entire
+        repository.
       </span>
     ),
   },
@@ -42,8 +43,8 @@ const sections = [
     title: 'Avoid context switches',
     text: (
       <span>
-        Glance inline documentation where you need it the most. Press{' '}
-        <span className="keyboard-shortcut">{'⌘'}</span> to see more.
+        Glance inline documentation without leaving the git diff. Hover on a
+        symbol and then press <span className="keyboard-shortcut">{'⌘'}</span>.
       </span>
     ),
   },
@@ -53,8 +54,8 @@ const sections = [
     title: 'Navigate with control',
     text: (
       <span>
-        Use the diff files tree to get the hierarchical view, instead of
-        scrolling cluelessly on the flat diff.
+        Use the hierarchical diff files tree to get the big picture. Navigate
+        with it instead of scrolling cluelessly.
       </span>
     ),
   },

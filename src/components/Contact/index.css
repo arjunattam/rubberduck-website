@@ -8,24 +8,21 @@
   margin-bottom: 20px;
 }
 
-.contact-container .contact-buttons {
-  text-align: right;
+.contact-container ul {
+  padding: 0;
+  list-style-type: none;
+  color: #4a4a92;
+  fill: #4a4a92;
 }
 
-.contact-container .btn-primary {
-  background-color: rgba(227, 227, 245, 0.5);
-  border-color: #4a4a92;
-  color: #4a4a92 !important;
-  border-width: 2px;
+.contact-container ul li {
+  display: flex;
+  border-bottom: 1px solid rgba(193, 189, 224, 0.3);
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.contact-container .btn-primary:hover {
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  transform: translateY(-1px);
-}
-
-@media only screen and (max-width: 576px) {
-  .contact-container .contact-buttons {
-    text-align: left;
-  }
+.contact-container ul li:last-child {
+  border: none;
 }
