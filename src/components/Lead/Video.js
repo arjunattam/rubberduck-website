@@ -1,20 +1,23 @@
 import React from 'react'
 
-const VideoRow = () => (
+const VideoRow = props => (
   <video
     style={{
       width: '100%',
       height: 'auto',
       display: 'block',
+      border: '1px solid rgb(198, 197, 204, 0.75)',
+      borderTopLeftRadius: '5px',
+      borderTopRightRadius: '5px',
+      boxShadow: '0 0 3px 0 #ecebf1',
     }}
     className="video-section"
     autoPlay
     muted
     loop
     playsInline
-  >
-    <source src="out-8.mp4" type="video/mp4" />
-  </video>
+    src={props.src}
+  />
 )
 
 export default VideoRow

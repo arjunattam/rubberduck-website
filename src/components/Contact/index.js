@@ -16,10 +16,9 @@ const ContactSection = () => (
           <h3>How can we help?</h3>
           <p>
             We are eager to listen to your feedback, feature requests, and
-            understand your internal workflow — to help{' '}
-            <span className="highlight">
-              your team deliver quality outcomes
-            </span>. Reach out to us.
+            understand your internal workflow — to help your team{' '}
+            <span className="highlight">deliver quality outcomes</span>. Reach
+            out to us.
           </p>
         </Col>
         <Col md="4" xs="12" className="contact-buttons">

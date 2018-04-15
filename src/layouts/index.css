@@ -77,11 +77,6 @@ body {
 }
 
 /* Page styling */
-.page-section-1 .video-container {
-  max-width: 1040px;
-  padding: 0;
-}
-
 .main-section .container {
   max-width: 800px;
   margin: 0 auto;

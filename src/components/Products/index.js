@@ -29,7 +29,9 @@ class CTA extends React.Component {
   }
 
   sendRequest = evt => {
+    console.log('attempting to prevent default')
     evt.preventDefault()
+    console.log('done')
     this.setState({
       isLoading: true,
     })
@@ -44,10 +46,11 @@ class CTA extends React.Component {
 
   render() {
     const { hasInput, text, subText } = this.props
+    console.log('render called')
     return (
       <div>
         {hasInput ? (
-          <form onSubmit={evt => this.sendRequest(evt)}>
+          <form onSubmit={e => this.sendRequest(e)}>
             <div className="cta-vertical-group">
               <Input
                 placeholder="Your email"
