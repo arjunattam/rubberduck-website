@@ -6,7 +6,7 @@ const VideoRow = props => (
       width: '100%',
       height: 'auto',
       display: 'block',
-      border: '1px solid rgb(198, 197, 204, 0.75)',
+      border: '1px solid #ddd',
       borderTopLeftRadius: '5px',
       borderTopRightRadius: '5px',
       boxShadow: '0 0 3px 0 #ecebf1',
