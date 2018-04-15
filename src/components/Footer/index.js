@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import RubberduckIcon from '../icon'
 import './index.css'
 

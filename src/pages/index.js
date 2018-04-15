@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { Container } from 'reactstrap'
 
 import Lead from '../components/Lead'

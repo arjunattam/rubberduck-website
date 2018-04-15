@@ -12,8 +12,8 @@ import {
   Container,
 } from 'reactstrap'
 import { makeAPICalls } from './utils'
-import './index.css'
 import { InstallButton } from '../Title'
+import './index.css'
 
 class CTA extends React.Component {
   state = {
