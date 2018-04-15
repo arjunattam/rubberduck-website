@@ -131,8 +131,9 @@ const PrivateSourceCard = props => (
       </span>
     }
     textList={[
-      'Built for security: your code does not leave your machine.',
+      'Single user license. Unlimited repositories.',
       'Supports GitHub.com, GitHub Enterprise, Bitbucket Cloud, Bitbucket Server and GitLab.',
+      'Built for security: your code does not leave your machine.',
     ]}
     ctaText={price}
     ctaSubtext={'Includes a year of updates and 7 day free trial'}

@@ -17,9 +17,9 @@ const ContactSection = () => (
           <h3>How can we help?</h3>
           <p>
             We are eager to listen to your feedback, feature requests, and
-            understand your internal workflow — to help your team{' '}
-            <span className="highlight">deliver quality outcomes</span>. Reach
-            out to us.
+            understand your internal processes — to help your team{' '}
+            <span className="highlight">improve your review workflow</span>.
+            Reach out to us.
           </p>
         </Col>
         <Col sm="4" xs="12">

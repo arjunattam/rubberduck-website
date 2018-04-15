@@ -54,8 +54,8 @@ const sections = [
     title: 'Navigate with control',
     text: (
       <span>
-        Use the hierarchical diff files tree to get the big picture. Navigate
-        with it instead of scrolling cluelessly.
+        Navigate the git diff with a hierarchical files view, instead of
+        scrolling cluelessly.
       </span>
     ),
   },
