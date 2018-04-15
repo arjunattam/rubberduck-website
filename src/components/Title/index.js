@@ -35,11 +35,11 @@ const Title = () => (
   <div className="title">
     <Container>
       <Row className="title-row">
-        <Col xs="12" md="8" className="logo-col">
+        <Col xs="12" sm="6" md="8" className="logo-col">
           <RubberduckIcon size="32" />
           <h1>Rubberduck</h1>
         </Col>
-        <Col md="4" className="install-col">
+        <Col xs="12" sm="6" md="4" className="install-col">
           <InstallButton />
         </Col>
       </Row>

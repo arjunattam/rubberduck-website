@@ -13,7 +13,7 @@ const ContactSection = () => (
   <div className="contact-container main-section">
     <Container>
       <Row>
-        <Col md="8" xs="12">
+        <Col sm="8" xs="12">
           <h3>How can we help?</h3>
           <p>
             We are eager to listen to your feedback, feature requests, and
@@ -22,7 +22,7 @@ const ContactSection = () => (
             out to us.
           </p>
         </Col>
-        <Col md="4" xs="12">
+        <Col sm="4" xs="12">
           <ul>
             <li>
               <div>
