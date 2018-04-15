@@ -1,14 +1,18 @@
 import React from 'react'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, Container } from 'reactstrap'
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap'
 import './index.css'
-import referencesImg from '../../static/features/feature-1-2x.png'
-import definitionsImg from '../../static/features/feature-2-2x.png'
-import filesImg from '../../static/features/feature-3-2x.png'
+import FeatureImage from './Image'
+import hoverBigImg from '../../static/features/hover-big.png'
+import hoverImg from '../../static/features/hover-small.png'
+import usagesBigImg from '../../static/features/usages-big.png'
+import usagesImg from '../../static/features/usages-small.png'
+import treeBigImg from '../../static/features/tree-big.png'
+import treeImg from '../../static/features/tree-small.png'
 
 const FeatureCard = props => (
   <Card className="features-card">
-    <img className="features-image" src={props.img} />
+    <FeatureImage src={props.img} />
     <div className="feature-card-inner">
       <CardBody style={{ paddingBottom: '2px' }}>
         <CardTitle>{props.title}</CardTitle>
@@ -22,34 +26,55 @@ const FeatureCard = props => (
 
 const sections = [
   {
-    img: referencesImg,
-    title: 'Find usages',
-    text:
-      'Find where your methods are called from, without leaving the diff view.',
+    img: usagesImg,
+    bigImg: usagesBigImg,
+    title: 'Speed up comprehension',
+    text: (
+      <span>
+        <span className="keyboard-shortcut">{'⌘ + click'}</span> on your symbols
+        to find out where they are used and defined — across the entire
+        repository.
+      </span>
+    ),
   },
   {
-    img: definitionsImg,
-    title: 'Open definitions',
-    text:
-      'Glance method and class definition snippets right next to the git diff.',
+    img: hoverImg,
+    bigImg: hoverBigImg,
+    title: 'Avoid context switches',
+    text: (
+      <span>
+        Glance inline documentation without leaving the git diff. Hover on a
+        symbol and then press <span className="keyboard-shortcut">{'⌘'}</span>.
+      </span>
+    ),
   },
   {
-    img: filesImg,
-    title: 'Navigate faster',
-    text: 'Navigate the diff with a files tree, to avoid scrolling cluelessly.',
+    img: treeImg,
+    bigImg: treeBigImg,
+    title: 'Navigate with control',
+    text: (
+      <span>
+        Navigate the git diff with a hierarchical files view, instead of
+        scrolling cluelessly.
+      </span>
+    ),
   },
 ]
 
 const FeaturesSection = () => (
-  <Row className="features-section">
-    {sections.map(element => {
-      return (
-        <Col xs="12" md="4" sm="4" key={element.title}>
-          <FeatureCard {...element} />
-        </Col>
-      )
-    })}
-  </Row>
+  <div className="features-section main-section blueprint">
+    <Container>
+      <Row>
+        {sections.map(element => {
+          return (
+            <Col xs="12" md="4" sm="4" key={element.title}>
+              <FeatureCard {...element} />
+            </Col>
+          )
+        })}
+      </Row>
+    </Container>
+  </div>
 )
 
 export default FeaturesSection
