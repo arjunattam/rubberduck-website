@@ -1,15 +1,24 @@
 .features-section {
-  margin: 20px 0;
+  margin-top: -105px;
+}
+
+.features-section .container {
+  max-width: 1040px;
+  padding-top: 145px;
 }
 
 .features-image {
   width: 100%;
-  border: 1px solid #fff;
+  border: 1px solid #efebfb;
+}
+
+.features-card {
+  padding: 20px;
+  box-shadow: 0 0 4px 1px rgba(60, 60, 60, 0.07);
 }
 
 .features-section .card-body {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   color: #323038;
 }
 
@@ -19,19 +28,8 @@
   color: #223750;
 }
 
-.features-card {
-  border: none;
-  display: block;
-  background: linear-gradient(180deg, #ffffff, #f5f8ff);
-  border-radius: 0.75rem;
-}
-
-.feature-card-inner {
-  height: 160px;
-}
-
 @media only screen and (max-width: 576px) {
   .features-card {
-    margin: 10px 0;
+    margin: 20px 0;
   }
 }

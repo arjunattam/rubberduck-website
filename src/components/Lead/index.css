@@ -1,0 +1,24 @@
+.lead-container {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.lead-container h2 {
+  color: #29293b;
+}
+
+.lead-container h4 {
+  color: #8384ab;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.lead-container .video-switcher {
+  text-decoration: underline;
+  text-decoration-color: rgba(192, 188, 255, 0.65);
+}
+
+.lead-container .video-switcher:hover {
+  cursor: pointer;
+  text-decoration-color: #8384ab;
+}

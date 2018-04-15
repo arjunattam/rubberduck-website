@@ -4,18 +4,21 @@ import Helmet from 'react-helmet'
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
+import Title from '../components/Title'
 import Footer from '../components/Footer'
+import { leadDescription } from '../components/Lead'
 import favicon from '../static/icon-16.png'
-import { description } from '../components/Title'
+
+const title = `Rubberduck | ${leadDescription}`
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Rubberduck | Faster code reviews on GitHub"
+      title={title}
       meta={[
         {
           name: 'description',
-          content: description,
+          content: leadDescription,
         },
         { name: 'keywords', content: 'github, code, reviews, sidebar' },
       ]}
@@ -27,6 +30,7 @@ const TemplateWrapper = ({ children }) => (
       />
     </Helmet>
     <div>
+      <Title />
       {children()}
       <Footer />
     </div>
