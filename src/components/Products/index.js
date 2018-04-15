@@ -103,7 +103,7 @@ const ProductCard = props => (
 const OpenSourceCard = props => (
   <ProductCard
     title={'For open source'}
-    tagline={'Browser extension + Backend hosted by us.'}
+    tagline={'Browser extension + Backend service hosted by us.'}
     textList={[
       'Free to use. Unlimited open source repositories.',
       'Supports GitHub.com and Bitbucket Cloud.',
@@ -126,7 +126,7 @@ const PrivateSourceCard = props => (
     title={'For private repositories'}
     tagline={
       <span>
-        Browser extension + Backend as a menu bar app.{' '}
+        Browser extension + Backend service in a menu bar app.{' '}
         <span className="highlight">Available May 2018.</span>
       </span>
     }
