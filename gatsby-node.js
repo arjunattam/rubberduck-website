@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+
 const path = require('path')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
