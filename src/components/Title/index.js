@@ -36,11 +36,11 @@ const Navigation = () => (
     <li>
       <a href="#products">Pricing</a>
     </li>
-    <li>
+    {/* <li>
       <a href="https://support.rubberduck.io/" target="_blank">
         Support
       </a>
-    </li>
+    </li> */}
     <li>
       <a href="https://twitter.com/getrubberduck" target="_blank">
         Changelog

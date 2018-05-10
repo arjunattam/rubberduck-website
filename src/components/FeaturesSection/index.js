@@ -25,10 +25,27 @@ const FeatureCard = props => (
   </Card>
 );
 
-const sections = [
+const VIDEOS = [
   {
     img: 'feature-1.jpg',
     video: 'feature-1-cropped-hb.mp4',
+  },
+  {
+    img: 'feature-2.jpg',
+    video: 'feature-2-v4-cropped-hb.mp4',
+  },
+  {
+    img: 'feature-3.jpg',
+    video: 'feature-3-cropped-hb.mp4',
+  },
+  {
+    img: 'feature-4.jpg',
+    video: 'feature-4-v2-cropped-hb.mp4',
+  },
+];
+
+const sections = [
+  {
     title: 'Speed up comprehension',
     text: (
       <span>
@@ -39,8 +56,6 @@ const sections = [
     ),
   },
   {
-    img: 'feature-2.jpg',
-    video: 'feature-2-v4-cropped-hb.mp4',
     title: 'Reduce context switches',
     text: (
       <span>
@@ -50,8 +65,6 @@ const sections = [
     ),
   },
   {
-    img: 'feature-3.jpg',
-    video: 'feature-3-cropped-hb.mp4',
     title: 'Navigate in control',
     text: (
       <span>
@@ -61,8 +74,6 @@ const sections = [
     ),
   },
   {
-    img: 'feature-4.jpg',
-    video: 'feature-4-v2-cropped-hb.mp4',
     title: 'Stick to your workflow',
     text: (
       <span>
@@ -75,22 +86,39 @@ const sections = [
 
 export class VideoContainer extends React.Component {
   state = {
-    activeVideoSrc: 'feature-1-cropped-hb.mp4',
-    activeVideoPoster: usagesImg,
+    activeVideoIndex: 0,
   };
 
-  setActive = (src, poster) =>
-    this.setState({ activeVideoSrc: src, activeVideoPoster: poster });
+  componentDidMount() {
+    document
+      .querySelector('.video-container video')
+      .addEventListener('ended', () => this.onVideoEnded());
+  }
+
+  onVideoEnded = () => {
+    const newIndex = this.state.activeVideoIndex + 1 % VIDEOS.length;
+    this.setState({ activeVideoIndex: newIndex });
+  };
+
+  setActive = index => this.setState({ activeVideoIndex: index });
 
   renderCard = index => {
-    const current = sections[index];
+    const section = sections[index];
+    const video = VIDEOS[index];
     return (
       <FeatureCard
-        {...current}
-        onClick={() => this.setActive(current.video, current.img)}
-        isActive={this.state.activeVideoSrc === current.video}
+        {...section}
+        {...video}
+        onClick={() => this.setActive(index)}
+        isActive={this.state.activeVideoIndex === index}
       />
     );
+  };
+
+  renderVideo = () => {
+    const { activeVideoIndex } = this.state;
+    const { video, img } = VIDEOS[activeVideoIndex];
+    return <VideoRow src={video} poster={img} />;
   };
 
   render() {
@@ -100,11 +128,7 @@ export class VideoContainer extends React.Component {
         <div className="top-half" />
         <Container className="video-container">
           <div className="video-container-inner">
-            <VideoRow
-              src={this.state.activeVideoSrc}
-              poster={this.state.activeVideoPoster}
-            />
-
+            {this.renderVideo()}
             <Row className="features-row">
               <Col>{this.renderCard(0)}</Col>
               <Col>{this.renderCard(1)}</Col>
