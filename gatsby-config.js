@@ -17,5 +17,18 @@ module.exports = {
         plugins: ['gatsby-plugin-catch-links'],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `lato`,
+          `open sans`,
+          `raleway`,
+          `fira mono`,
+          `roboto mono`,
+          // `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+      },
+    },
   ],
-}
+};

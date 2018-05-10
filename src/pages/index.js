@@ -1,20 +1,18 @@
-import React from 'react'
-import { Container } from 'reactstrap'
-
-import Lead from '../components/Lead'
-import LanguagesRow from '../components/LanguagesRow'
-import FeaturesSection from '../components/FeaturesSection'
-import ProductContainer from '../components/Products'
-import ContactSection from '../components/Contact'
+import React from 'react';
+import { Lead } from '../components/Lead';
+import LanguagesRow from '../components/LanguagesRow';
+import { VideoContainer } from '../components/FeaturesSection';
+import ProductContainer from '../components/Products';
+import ContactSection from '../components/Contact';
 
 const IndexPage = () => (
   <div>
     <Lead />
-    <FeaturesSection />
+    <VideoContainer />
     <LanguagesRow />
     <ProductContainer />
     <ContactSection />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

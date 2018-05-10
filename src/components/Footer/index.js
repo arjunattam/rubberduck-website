@@ -1,13 +1,13 @@
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
-import RubberduckIcon from '../icon'
-import './index.css'
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import RubberduckIcon from '../icon';
+import './index.css';
 
-const email = 'team@rubberduck.io'
-const wiki = 'https://en.wikipedia.org/wiki/Rubber_duck_debugging'
+const email = 'team@rubberduck.io';
+const wiki = 'https://en.wikipedia.org/wiki/Rubber_duck_debugging';
 
 const Footer = () => (
-  <div className="footer main-section">
+  <div className="footer main-section monospace">
     <Container>
       <Row>
         <Col md="6" sm="6" xs="12">
@@ -25,6 +25,6 @@ const Footer = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

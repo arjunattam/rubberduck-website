@@ -1,58 +1,60 @@
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
-import MailIcon from '../mail'
-import 'devicon/devicon.css'
-import './index.css'
+import React from 'react';
+import { Container, Row, Col, Button } from 'reactstrap';
+import MailIcon from '../mail';
+import CustomButton from '../CustomButton';
+import 'devicon/devicon.css';
+import './index.css';
 
-const twitter = 'https://twitter.com/getrubberduck'
-const email = 'team@rubberduck.io'
+const twitter = 'https://twitter.com/getrubberduck';
+const email = 'team@rubberduck.io';
+const triggerChat = () => $crisp.push(['do', 'chat:open']);
 const slack =
-  'https://join.slack.com/t/karigarihq/shared_invite/enQtMzM5NzQxNjQxNTA1LTM0ZDFhNWQ3YmEyYmExZTY1ODJmM2U3NzExM2E0YmQxODcxYTgwYzczOTVkOGY5ODk2MWE0MzE2ODliNGU1ZDc'
+  'https://join.slack.com/t/karigarihq/shared_invite/enQtMzM5NzQxNjQxNTA1LTM0ZDFhNWQ3YmEyYmExZTY1ODJmM2U3NzExM2E0YmQxODcxYTgwYzczOTVkOGY5ODk2MWE0MzE2ODliNGU1ZDc';
+
+const ContactList = () => (
+  <ul>
+    <li>
+      <a title={email} href={`mailto:${email}`}>
+        team@rubberduck.io
+      </a>
+    </li>
+    <li>
+      <a href={twitter}>@getrubberduck</a>
+    </li>
+    <li>
+      <a href={slack}>Slack</a>
+    </li>
+  </ul>
+);
+
+const ContactButtons = () => (
+  <div className="contact-buttons">
+    <CustomButton onClick={triggerChat} text={'Chat with us now'} />
+    <div className="strike monospace">
+      <span>or</span>
+    </div>
+    <ContactList />
+  </div>
+);
 
 const ContactSection = () => (
   <div className="contact-container main-section">
     <Container>
+      <h5 className="monospace">Did we miss what you need?</h5>
       <Row>
-        <Col sm="8" xs="12">
-          <h3>How can we help?</h3>
+        <Col md="6" sm="12" xs="12">
           <p>
-            We are eager to listen to your feedback, feature requests, and
-            understand your internal processes — to help your team{' '}
-            <span className="highlight">improve your review workflow</span>.
-            Reach out to us.
+            We want to know your feedback, feature requests, and understand your
+            workflow — to help your team{' '}
+            <span className="highlight">get better at reviews</span>.
           </p>
         </Col>
-        <Col sm="4" xs="12">
-          <ul>
-            <li>
-              <div>
-                <MailIcon size={24} />
-              </div>
-              <div>
-                <a href={`mailto:${email}`}>{email}</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <i className="devicon-twitter-plain" style={{ fontSize: 20 }} />
-              </div>
-              <div>
-                <a href={twitter}>{'@getrubberduck'}</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <i className="devicon-slack-plain" style={{ fontSize: 24 }} />
-              </div>
-              <div>
-                <a href={slack}>{'Join our Slack'}</a>
-              </div>
-            </li>
-          </ul>
+        <Col md="6" sm="12" xs="12">
+          <ContactButtons />
         </Col>
       </Row>
     </Container>
   </div>
-)
+);
 
-export default ContactSection
+export default ContactSection;
