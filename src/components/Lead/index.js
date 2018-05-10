@@ -6,7 +6,7 @@ import './index.css';
 
 export const leadDescription = 'Finish your code reviews faster';
 const subDescription =
-  'Enhanced git diffs with code-aware navigation and symbol search';
+  'Enhanced git diffs with code-aware navigation and symbol lookup';
 
 export class Lead extends React.Component {
   render() {

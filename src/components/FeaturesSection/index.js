@@ -50,8 +50,7 @@ const sections = [
     text: (
       <span>
         <span className="keyboard-shortcut">{'⌘ + click'}</span> on your symbols
-        to find out where they are used and defined — across the entire
-        repository.
+        to find out where they are used and defined, across the repository.
       </span>
     ),
   },
@@ -77,8 +76,7 @@ const sections = [
     title: 'Stick to your workflow',
     text: (
       <span>
-        Rubberduck works with your pull requests and code pages on GitHub and
-        Bitbucket.
+        Supports existing pull requests and code pages on Github and Bitbucket.
       </span>
     ),
   },
@@ -96,8 +94,8 @@ export class VideoContainer extends React.Component {
   }
 
   onVideoEnded = () => {
-    const newIndex = this.state.activeVideoIndex + 1 % VIDEOS.length;
-    this.setState({ activeVideoIndex: newIndex });
+    const newIndex = this.state.activeVideoIndex + 1;
+    this.setState({ activeVideoIndex: newIndex % VIDEOS.length });
   };
 
   setActive = index => this.setState({ activeVideoIndex: index });

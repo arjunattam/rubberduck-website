@@ -44,8 +44,8 @@ const ContactSection = () => (
       <Row>
         <Col md="6" sm="12" xs="12">
           <p>
-            We want to know your feedback, feature requests, and understand your
-            workflow — to help your team{' '}
+            We want to get your feedback, feature requests, and understand your
+            workflow better — to help your team{' '}
             <span className="highlight">get better at reviews</span>.
           </p>
         </Col>

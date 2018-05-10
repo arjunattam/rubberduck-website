@@ -103,7 +103,7 @@ const ProductCard = props => (
 const OpenSourceCard = props => (
   <ProductCard
     title={'For open source'}
-    tagline={'Browser extension + code analyzer hosted by us.'}
+    tagline={'Browser extension + analyzer engine hosted by us.'}
     textList={[
       'Free to use. Unlimited public repositories.',
       'Supports GitHub.com and Bitbucket Cloud.',
@@ -126,8 +126,8 @@ const PrivateSourceCard = props => (
     title={'For private repositories'}
     tagline={
       <span>
-        Browser extension + code analyzer in a menu bar app.{' '}
-        <span className="highlight">Available in June</span>.
+        Browser extension + analyzer engine in a menu bar app.{' '}
+        <span className="highlight">Available in June.</span>
       </span>
     }
     textList={[
@@ -135,8 +135,8 @@ const PrivateSourceCard = props => (
       'Supports GitHub.com and Enterprise.',
       'Supports Bitbucket Cloud and Server',
       <span>
-        <strong>Built for security</strong>: your code does not leave your
-        machine.
+        <span className="highlight">Built for security</span>: your code does
+        not leave your machine.
       </span>,
     ]}
     ctaText={price}
