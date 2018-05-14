@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Button,
   Input,
@@ -10,40 +10,40 @@ import {
   CardBody,
   CardTitle,
   Container,
-} from 'reactstrap'
-import { makeAPICalls } from './utils'
-import { InstallButton } from '../Title'
-import './index.css'
+} from 'reactstrap';
+import { makeAPICalls } from './utils';
+import { InstallButton } from '../Title';
+import './index.css';
 
 class CTA extends React.Component {
   state = {
     isLoading: false,
     isSubmitted: false,
     inputValue: '',
-  }
+  };
 
   updateInputValue = evt => {
     this.setState({
       inputValue: evt.target.value,
-    })
-  }
+    });
+  };
 
   sendRequest = evt => {
-    evt.preventDefault()
+    evt.preventDefault();
     this.setState({
       isLoading: true,
-    })
+    });
 
     makeAPICalls(this.state.inputValue, response => {
       this.setState({
         isLoading: false,
         isSubmitted: true,
-      })
-    })
-  }
+      });
+    });
+  };
 
   render() {
-    const { hasInput, text, subText } = this.props
+    const { hasInput, text, subText } = this.props;
     return (
       <div>
         {hasInput ? (
@@ -75,13 +75,13 @@ class CTA extends React.Component {
 
         <div className="cta-sub" children={subText} />
       </div>
-    )
+    );
   }
 }
 
 const ProductCard = props => (
   <Card className="product-card">
-    <CardBody className="title-body">
+    <CardBody className="product-title monospace">
       <CardTitle>{props.title}</CardTitle>
       <div className="tagline">{props.tagline}</div>
     </CardBody>
@@ -98,20 +98,20 @@ const ProductCard = props => (
       />
     </CardBody>
   </Card>
-)
+);
 
 const OpenSourceCard = props => (
   <ProductCard
     title={'For open source'}
-    tagline={'Browser extension + Backend service hosted by us.'}
+    tagline={'Browser extension + analyzer engine hosted by us.'}
     textList={[
-      'Free to use. Unlimited open source repositories.',
+      'Free to use. Unlimited public repositories.',
       'Supports GitHub.com and Bitbucket Cloud.',
-      'Auto-updates for feature upgrades and new language support.',
+      'Auto-updates for features and language support.',
     ]}
     ctaText={'Install in your browser'}
   />
-)
+);
 
 const price = (
   <span>
@@ -119,40 +119,44 @@ const price = (
     <span className="strikethrough">{'$119'}</span>
     {' $59'}
   </span>
-)
+);
 
 const PrivateSourceCard = props => (
   <ProductCard
     title={'For private repositories'}
     tagline={
       <span>
-        Browser extension + Backend service in a menu bar app.{' '}
-        <span className="highlight">Available May 2018.</span>
+        Browser extension + analyzer engine in a menu bar app.{' '}
+        <span className="highlight">Available in June.</span>
       </span>
     }
     textList={[
       'Single user license. Unlimited repositories.',
-      'Supports GitHub.com, GitHub Enterprise, Bitbucket Cloud, Bitbucket Server and GitLab.',
-      'Built for security: your code does not leave your machine.',
+      'Supports GitHub.com and Enterprise.',
+      'Supports Bitbucket Cloud and Server',
+      <span>
+        <span className="highlight">Built for security</span>: your code does
+        not leave your machine.
+      </span>,
     ]}
     ctaText={price}
     ctaSubtext={'Includes a year of updates and 7 day free trial'}
     hasInput={true}
   />
-)
+);
 
 class ProductsSection extends React.Component {
   state = {
     isLoading: false,
     isSubmitted: false,
     inputValue: '',
-  }
+  };
 
   updateInputValue = evt => {
     this.setState({
       inputValue: evt.target.value,
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -164,16 +168,16 @@ class ProductsSection extends React.Component {
           <PrivateSourceCard />
         </Col>
       </Row>
-    )
+    );
   }
 }
 
 const ProductContainer = () => (
-  <div className="product-section dark-blueprint main-section">
+  <div id="products" className="product-section dark-blueprint main-section">
     <Container>
       <ProductsSection />
     </Container>
   </div>
-)
+);
 
-export default ProductContainer
+export default ProductContainer;

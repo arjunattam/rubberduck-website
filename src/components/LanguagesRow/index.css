@@ -1,12 +1,13 @@
 .languages-container .container {
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
   color: #717193;
+  text-transform: uppercase;
 }
 
 .languages-row,
 .languages-header {
-  margin: 10px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +15,13 @@
 
 .languages-row i {
   font-size: 36px;
-  padding: 1rem;
+  padding: 0 1rem;
   color: rgba(89, 90, 134, 0.9);
 }
 
 @media only screen and (max-width: 576px) {
   .languages-row i {
     font-size: 24px;
+    padding: 0 0.8rem;
   }
 }

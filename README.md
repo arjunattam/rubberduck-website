@@ -31,3 +31,23 @@ npm run push
 ```
 
 For more info, check out the [GCP guide](https://cloud.google.com/storage/docs/hosting-static-website) for hosting static websites.
+
+## Videos
+
+1.  Use browsersize.com to verify that your browser width is 1040
+
+2.  Use screeny to take video of a window. Make sure you are on a retina screen.
+
+3.  Use quicktime to trim the video
+
+4.  Use ffmpeg to crop the video to 2040 x 1280
+
+5.  Use ffmpeg to change format to mp4
+
+6.  Use handbrake to optimize for web and remove audio
+
+7.  Use ffmpeg to get the first frame for poster
+
+    ```
+    ffmpeg -ss 0.5 -i feature-4-v2-cropped-hb.mp4 -t 1 -s 2080x1280 -f image2 feature-4.jpg
+    ```

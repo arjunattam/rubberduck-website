@@ -17,5 +17,11 @@ module.exports = {
         plugins: ['gatsby-plugin-catch-links'],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`lato`, `roboto mono`],
+      },
+    },
   ],
-}
+};

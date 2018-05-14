@@ -2,6 +2,8 @@
   border-top: 3px solid rgb(90, 90, 134);
   background-color: #28283c;
   color: #ccc;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .footer a {
