@@ -127,7 +127,7 @@ const PrivateSourceCard = props => (
     tagline={
       <span>
         Browser extension + analyzer engine in a menu bar app.{' '}
-        <span className="highlight">Available in June.</span>
+        <span className="highlight">Available June 10.</span>
       </span>
     }
     textList={[
@@ -140,7 +140,7 @@ const PrivateSourceCard = props => (
       </span>,
     ]}
     ctaText={price}
-    ctaSubtext={'Includes a year of updates and 7 day free trial'}
+    ctaSubtext={'Includes a year of updates and 14 day free trial'}
     hasInput={true}
   />
 );
