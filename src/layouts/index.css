@@ -4,6 +4,11 @@ body {
     'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+h1 {
+  font-weight: bold;
+  color: rgba(63, 65, 90);
+}
+
 .blueprint {
   background-image: linear-gradient(
       rgba(181, 181, 204, 0.3) 2px,

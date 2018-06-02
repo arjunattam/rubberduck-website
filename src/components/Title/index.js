@@ -38,7 +38,7 @@ const Navigation = () => (
       <a href="/#products">Pricing</a>
     </li>
     <li>
-      <a href="/posts">Blog</a>
+      <a href="/blog">Blog</a>
     </li>
     <li>
       <a href="https://support.rubberduck.io/" target="_blank">

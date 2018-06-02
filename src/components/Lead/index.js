@@ -13,7 +13,7 @@ export class Lead extends React.Component {
     return (
       <div className="lead-container">
         <Container>
-          <h2>{leadDescription}</h2>
+          <h1>{leadDescription}</h1>
           <h4>{subDescription}</h4>
           <div className="lead-button">
             <InstallButton />
