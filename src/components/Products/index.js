@@ -81,7 +81,7 @@ class CTA extends React.Component {
 
 const ProductCard = props => (
   <Card className="product-card">
-    <CardBody className="product-title monospace">
+    <CardBody className="product-title">
       <CardTitle>{props.title}</CardTitle>
       <div className="tagline">{props.tagline}</div>
     </CardBody>

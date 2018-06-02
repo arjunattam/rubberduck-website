@@ -7,7 +7,7 @@ const email = 'team@rubberduck.io';
 const wiki = 'https://en.wikipedia.org/wiki/Rubber_duck_debugging';
 
 const Footer = () => (
-  <div className="footer main-section monospace">
+  <div className="footer main-section">
     <Container>
       <Row>
         <Col md="6" sm="6" xs="12">

@@ -30,7 +30,7 @@ const ContactList = () => (
 const ContactButtons = () => (
   <div className="contact-buttons">
     <CustomButton onClick={triggerChat} text={'Chat with us now'} />
-    <div className="strike monospace">
+    <div className="strike">
       <span>or</span>
     </div>
     <ContactList />
@@ -40,7 +40,7 @@ const ContactButtons = () => (
 const ContactSection = () => (
   <div className="contact-container main-section">
     <Container>
-      <h5 className="monospace">Did we miss what you need?</h5>
+      <h5>Did we miss what you need?</h5>
       <Row>
         <Col md="6" sm="12" xs="12">
           <p>

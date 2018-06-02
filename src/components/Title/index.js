@@ -49,7 +49,7 @@ const Navigation = () => (
 );
 
 const Title = () => (
-  <div className="title monospace">
+  <div className="title">
     <Container>
       <Row className="title-row">
         <Col xs="12" sm="6" md="8">

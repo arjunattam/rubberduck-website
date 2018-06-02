@@ -6,13 +6,7 @@
 }
 
 .product-card .tagline {
-  text-transform: uppercase;
-  font-size: 14px;
   color: #4a4a91;
-}
-
-.product-title {
-  text-transform: uppercase;
 }
 
 .product-title h5 {

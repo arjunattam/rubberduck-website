@@ -4,10 +4,6 @@ body {
     'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-.monospace {
-  font-family: 'Roboto mono';
-}
-
 .blueprint {
   background-image: linear-gradient(
       rgba(181, 181, 204, 0.3) 2px,

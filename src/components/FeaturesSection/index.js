@@ -15,7 +15,7 @@ const FeatureCard = props => (
   <Card className={getClass(props.isActive)} inverse={true}>
     <div className="feature-card-inner">
       <CardBody>
-        <h5 className="monospace">{props.title}</h5>
+        <h5>{props.title}</h5>
         <div>{props.text}</div>
       </CardBody>
       <div className="images" onClick={props.onClick}>
