@@ -13,12 +13,12 @@ const getClass = isActive =>
 
 const FeatureCard = props => (
   <Card className={getClass(props.isActive)} inverse={true}>
-    <div className="feature-card-inner">
+    <div className="feature-card-inner" onClick={props.onClick}>
       <CardBody>
         <h5>{props.title}</h5>
         <div>{props.text}</div>
       </CardBody>
-      <div className="images" onClick={props.onClick}>
+      <div className="images">
         <FeatureImage src={props.img} />
       </div>
     </div>

@@ -58,8 +58,14 @@
   border-radius: 0;
 }
 
-.features-card.active {
+.features-card.active,
+.features-card:hover {
   background-color: rgba(215, 215, 230, 0.25);
+  cursor: pointer;
+}
+
+.features-card:hover .features-image {
+  border: 3px solid #727294;
 }
 
 .features-section .container {
@@ -71,11 +77,6 @@
   width: 75px;
   margin: 3px;
   border: 3px solid #d7d7e6;
-}
-
-.features-image:hover {
-  border: 3px solid #727294;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 576px) {
