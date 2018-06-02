@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import MailIcon from '../mail';
 import CustomButton from '../CustomButton';
-import 'devicon/devicon.css';
+
 import './index.css';
 
 const twitter = 'https://twitter.com/getrubberduck';

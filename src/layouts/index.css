@@ -1,5 +1,5 @@
 body {
-  font-family: Lato, avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: avenir, -apple-system, Lato, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
 }
@@ -83,6 +83,18 @@ body {
   padding: 50px 15px;
 }
 
+.main-section .sub-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 35px;
+}
+
+.main-section .head-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px 35px 0px;
+}
+
 .main-section .video-container {
   max-width: 1040px;
   margin: 0 auto;
@@ -108,4 +120,5 @@ a {
 
 a:hover {
   color: #8181d6;
+  text-decoration: none;
 }

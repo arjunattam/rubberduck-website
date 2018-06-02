@@ -31,19 +31,18 @@ export const InstallButton = () => (
   />
 );
 
+// TODO(arjun): should this be using gatsby-link?
 const Navigation = () => (
   <ul>
     <li>
-      <a href="#products">Pricing</a>
+      <a href="/#products">Pricing</a>
     </li>
-    {/* <li>
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
       <a href="https://support.rubberduck.io/" target="_blank">
         Support
-      </a>
-    </li> */}
-    <li>
-      <a href="https://twitter.com/getrubberduck" target="_blank">
-        Changelog
       </a>
     </li>
   </ul>
@@ -54,8 +53,10 @@ const Title = () => (
     <Container>
       <Row className="title-row">
         <Col xs="12" sm="6" md="8">
-          <RubberduckIcon size="24" />
-          <h1>Rubberduck</h1>
+          <a href="/">
+            <RubberduckIcon size="24" />
+            <h1>Rubberduck</h1>
+          </a>
         </Col>
         <Col xs="12" sm="6" md="4" className="navigation-col">
           <Navigation />

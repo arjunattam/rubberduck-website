@@ -1,24 +1,22 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
-const getTitle = title => `Rubberduck blog: ${title}`
+const getTitle = title => `Rubberduck blog: ${title}`;
 
 export default function Template({ data }) {
-  const { markdownRemark: post } = data // data.markdownRemark holds our post data
+  const { markdownRemark: post } = data; // data.markdownRemark holds our post data
   return (
-    <div className="page-section-1">
-      <div className="container blog-post-container">
-        <Helmet title={getTitle(post.frontmatter.title)} />
-        <div className="blog-post">
-          <h1>{post.frontmatter.title}</h1>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </div>
+    <div className="main-section">
+      <Helmet title={getTitle(post.frontmatter.title)} />
+      <div className="container blog-preview">
+        <h3>{post.frontmatter.title}</h3>
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </div>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -32,4 +30,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
