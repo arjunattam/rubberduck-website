@@ -29,10 +29,6 @@ const ContactList = () => (
 
 const ContactButtons = () => (
   <div className="contact-buttons">
-    <CustomButton onClick={triggerChat} text={'Chat with us now'} />
-    <div className="strike">
-      <span>or</span>
-    </div>
     <ContactList />
   </div>
 );

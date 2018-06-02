@@ -1,8 +1,12 @@
 .title {
   padding: 12px 0 2px;
   font-size: 14px;
-  background-color: #f8f8fb;
-  border-bottom: 3px solid rgba(239, 234, 255, 0.65);
+  background-color: #233f6c;
+  border-bottom: 4px solid rgba(75, 120, 255, 0.65);
+}
+
+.title a {
+  color: #fff;
 }
 
 .title-row {
