@@ -48,7 +48,7 @@ const BlogPostPreview = ({ post }) => (
 const ChangelogEntry = ({ post }) => (
   <div className="sub-container blog-changelog" key={post.id}>
     <h3>
-      <span>{post.frontmatter.title}</span> · {post.frontmatter.date}
+      <span>{post.frontmatter.title}</span> changelog · {post.frontmatter.date}
     </h3>
     <Row>
       <Col md="2" xs="12" className="product-col">
