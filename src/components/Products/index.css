@@ -1,8 +1,6 @@
 .product-card {
   background-color: #f1f1f7;
-  border: 1px solid rgb(102, 103, 134);
   padding: 20px;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
 }
 
 .product-card .tagline {

@@ -6,7 +6,8 @@
 }
 
 .title a {
-  color: #fff;
+  color: #d7e8ff;
+  padding: 2px;
 }
 
 .title-row {
@@ -32,10 +33,12 @@
 
 .title-row .navigation-col {
   text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .navigation-col ul {
-  margin-top: 5px;
+  margin-top: 8px;
   list-style-type: none;
   display: flex;
   justify-content: space-around;

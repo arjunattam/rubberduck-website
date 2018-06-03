@@ -1,8 +1,8 @@
 .blog-main-section {
   background: linear-gradient(
-    174deg,
-    rgba(226, 234, 244, 0.3) 260px,
-    #fff 261px
+    177deg,
+    rgba(226, 234, 244, 0.6) 170px,
+    #fff 171px
   );
 }
 
@@ -22,11 +22,12 @@
 
 .blog-preview h5 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #999;
 }
 
 .blog-changelog {
-  background-color: #fbfbfb;
+  background-color: rgba(252, 252, 252, 0.8);
   border: 1px solid #eee;
 }
 

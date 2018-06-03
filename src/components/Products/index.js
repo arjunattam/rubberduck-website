@@ -160,23 +160,21 @@ class ProductsSection extends React.Component {
 
   render() {
     return (
-      <Row>
-        <Col xs="12" md="6" sm="6">
+      <Container>
+        <Row>
           <OpenSourceCard />
-        </Col>
-        <Col xs="12" md="6" sm="6">
+        </Row>
+        <Row>
           <PrivateSourceCard />
-        </Col>
-      </Row>
+        </Row>
+      </Container>
     );
   }
 }
 
 const ProductContainer = () => (
-  <div id="products" className="product-section dark-blueprint main-section">
-    <Container>
-      <ProductsSection />
-    </Container>
+  <div id="products" className="product-section main-section">
+    <ProductsSection />
   </div>
 );
 
