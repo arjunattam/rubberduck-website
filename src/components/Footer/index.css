@@ -1,14 +1,46 @@
 .footer {
-  padding-top: 60px;
-  background: linear-gradient(3deg, #233f6c 200px, #fff 201px);
-  color: #ccc;
+  padding-top: 100px;
+  background: linear-gradient(3deg, #233f6c 250px, #fff 251px);
   font-size: 14px;
 }
 
 .footer a {
-  color: #f5f294;
+  color: #aed4ff;
 }
 
 .footer a:hover {
-  color: #f8e71c;
+  color: #f5f294;
+}
+
+.footer .email-btn {
+  display: block;
+  margin: 10px 0;
+  width: 160px;
+  font-size: 14px;
+  border: 2px solid #aed4ff;
+}
+
+.footer .email-btn:hover {
+  border: 2px solid #f5f294;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    background: linear-gradient(3deg, #233f6c 330px, #fff 331px);
+  }
+
+  .footer ul {
+    margin-top: 30px;
+  }
 }

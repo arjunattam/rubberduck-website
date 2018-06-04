@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import { Container, Row, Col } from 'reactstrap';
 import CustomButton from '../CustomButton';
 import RubberduckIcon from '../icon';
@@ -31,19 +32,16 @@ export const InstallButton = () => (
   />
 );
 
-// TODO(arjun): should this be using gatsby-link?
 const Navigation = () => (
   <ul>
     <li>
-      <a href="/#products">Pricing</a>
+      <Link to="/pricing">Pricing</Link>
     </li>
     <li>
-      <a href="/blog">Blog</a>
+      <Link to="/blog">Blog</Link>
     </li>
     <li>
-      <a href="https://support.rubberduck.io/" target="_blank">
-        Support
-      </a>
+      <Link to="/support">Support</Link>
     </li>
   </ul>
 );

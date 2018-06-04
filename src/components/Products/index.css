@@ -3,8 +3,12 @@
   background: linear-gradient(3deg, #fff 80px, rgba(226, 234, 244, 0.6) 81px);
 }
 
+.product-main-section-1 .container {
+  padding: 10px 15px 40px;
+}
+
 .product-main-section-2 .container {
-  padding: 40px 15px 10px;
+  padding: 40px 15px 20px;
 }
 
 .info-col h3 {

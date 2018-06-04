@@ -21,6 +21,8 @@ def sum(a, b):
 
 What I realised in the process was the difference between documentation and real-life code, and the difference between tutorials code versus production code. Open source code on GitHub has untapped potential, and I believe it can change lives, like it did for me.
 
+![testing](./test.gif)
+
 Reading code is incredibly hard though, as we are reminded frequently with the [monthly](https://news.ycombinator.com/item?id=16471161) [rant](#) on Hacker News. And I concur. Reading any of the above code meant having n-tabs with GitHub search or blob views, and pressing cmd-shift-{} to toggle between them. What I would attempt to do in the process is understand "how this code fits in together", or "what calls what, which calls this other thing...". As Kartik Agaram correctly points out, in [Nobody's just reading your code](http://akkartik.name/post/comprehension), code bases are maps.
 
 > Good books guide their readers through series of questions and their answers, but codebases are inherently non-linear, like a map. You can ask an infinite number of questions of a map. How far is it from A to B? Which is the nearest town to C? But you can’t expect a map to tell you what questions to ask, and it makes no sense to read a map linearly from top to bottom, left to right.
