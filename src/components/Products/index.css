@@ -1,65 +1,58 @@
-.product-card {
-  background-color: #f1f1f7;
-  padding: 20px;
+.product-main-section-1 {
+  padding-bottom: 80px;
+  background: linear-gradient(3deg, #fff 80px, rgba(226, 234, 244, 0.6) 81px);
 }
 
-.product-card .tagline {
-  color: #4a4a91;
+.product-main-section-2 .container {
+  padding: 40px 15px 10px;
 }
 
-.product-title h5 {
-  margin-bottom: 1.25rem;
+.info-col h3 {
+  color: #253044a9;
+  margin-bottom: 15px;
 }
 
-.product-card .card-body {
-  padding: 0.5rem;
+.info-col h3 span {
+  font-weight: bold;
+  color: #2a5298;
 }
 
-.product-card .cta-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.product-card ul {
+.info-col ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.product-card ul li {
-  border-top: 1px solid rgba(60, 60, 60, 0.1);
-  padding: 15px 0;
+.info-col ul li {
+  display: inline-block;
+  border-bottom: 2px solid rgba(177, 177, 177, 0.1);
+  padding: 10px 0;
+}
+
+.cta-col {
+  margin: 4px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-sub {
   font-size: 14px;
-  text-align: center;
   margin-top: 15px;
 }
 
-.cta-vertical-group {
-  flex-direction: column;
-  width: 245px;
-  margin: 4px auto;
-}
-
 .cta-vertical-group input {
+  display: inline-block;
+  text-align: center;
+  width: 245px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  width: 245px;
-  text-align: center;
 }
 
 .cta-vertical-group .btn {
+  display: inline-block;
+  width: 245px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  width: 245px;
-  margin-top: -1px;
-}
-
-@media only screen and (max-width: 576px) {
-  .product-card {
-    margin: 20px 0;
-  }
 }

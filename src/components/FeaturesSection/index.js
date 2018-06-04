@@ -122,7 +122,7 @@ export class VideoContainer extends React.Component {
   render() {
     const element = sections[0];
     return (
-      <div className="main-section blueprint">
+      <div className="main-section feature-main-section">
         <div className="top-half" />
         <Container className="video-container">
           <div className="video-container-inner">

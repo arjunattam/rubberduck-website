@@ -6,9 +6,6 @@ import {
   InputGroupAddon,
   Row,
   Col,
-  Card,
-  CardBody,
-  CardTitle,
   Container,
 } from 'reactstrap';
 import { makeAPICalls } from './utils';
@@ -47,8 +44,8 @@ class CTA extends React.Component {
     return (
       <div>
         {hasInput ? (
-          <form onSubmit={e => this.sendRequest(e)}>
-            <div className="cta-vertical-group">
+          <div className="cta-vertical-group">
+            <form onSubmit={e => this.sendRequest(e)}>
               <Input
                 placeholder="Your email"
                 value={this.state.inputValue}
@@ -67,8 +64,8 @@ class CTA extends React.Component {
                   {text}
                 </Button>
               )}
-            </div>
-          </form>
+            </form>
+          </div>
         ) : (
           <InstallButton />
         )}
@@ -79,38 +76,37 @@ class CTA extends React.Component {
   }
 }
 
-const ProductCard = props => (
-  <Card className="product-card">
-    <CardBody className="product-title">
-      <CardTitle>{props.title}</CardTitle>
-      <div className="tagline">{props.tagline}</div>
-    </CardBody>
+const InfoColumn = props => (
+  <Col className="info-col" md="8" xs="12">
+    <h3>
+      <span>{props.name}</span> {props.forWhat}
+    </h3>
+    <ul>{props.textList.map(element => <li key={element}>{element}</li>)}</ul>
+  </Col>
+);
 
-    <CardBody>
-      <ul>{props.textList.map(element => <li key={element}>{element}</li>)}</ul>
-    </CardBody>
-
-    <CardBody className="cta-body">
-      <CTA
-        text={props.ctaText}
-        subText={props.ctaSubtext}
-        hasInput={props.hasInput}
-      />
-    </CardBody>
-  </Card>
+const CTAColumn = props => (
+  <Col className="cta-col" md="4" xs="12">
+    <CTA {...props} />
+  </Col>
 );
 
 const OpenSourceCard = props => (
-  <ProductCard
-    title={'For open source'}
-    tagline={'Browser extension + analyzer engine hosted by us.'}
-    textList={[
-      'Free to use. Unlimited public repositories.',
-      'Supports GitHub.com and Bitbucket Cloud.',
-      'Auto-updates for features and language support.',
-    ]}
-    ctaText={'Install in your browser'}
-  />
+  <Container>
+    <Row>
+      <InfoColumn
+        name={'Basic'}
+        forWhat={'for open source'}
+        tagline={'Browser extension + analyzer engine hosted by us.'}
+        textList={[
+          'Free to use. Unlimited public repositories.',
+          'Supports GitHub.com and Bitbucket Cloud.',
+          'Auto-updates for features and language support.',
+        ]}
+      />
+      <CTAColumn text={'Install in your browser'} />
+    </Row>
+  </Container>
 );
 
 const price = (
@@ -122,27 +118,34 @@ const price = (
 );
 
 const PrivateSourceCard = props => (
-  <ProductCard
-    title={'For private repositories'}
-    tagline={
-      <span>
-        Browser extension + analyzer engine in a menu bar app.{' '}
-        <span className="highlight">Available June 10.</span>
-      </span>
-    }
-    textList={[
-      'Single user license. Unlimited repositories.',
-      'Supports GitHub.com and Enterprise.',
-      'Supports Bitbucket Cloud and Server',
-      <span>
-        <span className="highlight">Built for security</span>: your code does
-        not leave your machine.
-      </span>,
-    ]}
-    ctaText={price}
-    ctaSubtext={'Includes a year of updates and 14 day free trial'}
-    hasInput={true}
-  />
+  <Container>
+    <Row>
+      <InfoColumn
+        name={'Self-hosted'}
+        forWhat={'for private repositories'}
+        tagline={
+          <span>
+            Browser extension + analyzer engine in a menu bar app.{' '}
+            <span className="highlight">Available June 10.</span>
+          </span>
+        }
+        textList={[
+          'Single user license. Unlimited repositories.',
+          'Supports GitHub.com and Enterprise.',
+          'Supports Bitbucket Cloud and Server',
+          <span>
+            <span className="highlight">Built for security</span>: your code
+            does not leave your machine.
+          </span>,
+        ]}
+      />
+      <CTAColumn
+        text={price}
+        subText={'Includes a year of updates and 14 day free trial'}
+        hasInput={true}
+      />
+    </Row>
+  </Container>
 );
 
 class ProductsSection extends React.Component {
@@ -160,22 +163,16 @@ class ProductsSection extends React.Component {
 
   render() {
     return (
-      <Container>
-        <Row>
+      <div>
+        <div id="products" className="main-section product-main-section-1">
           <OpenSourceCard />
-        </Row>
-        <Row>
+        </div>
+        <div className="main-section product-main-section-2">
           <PrivateSourceCard />
-        </Row>
-      </Container>
+        </div>
+      </div>
     );
   }
 }
 
-const ProductContainer = () => (
-  <div id="products" className="product-section main-section">
-    <ProductsSection />
-  </div>
-);
-
-export default ProductContainer;
+export default ProductsSection;

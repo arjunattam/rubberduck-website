@@ -1,7 +1,7 @@
 .lead-container {
-  padding-top: 70px;
+  padding: 70px 0;
   text-align: center;
-  margin-bottom: 50px;
+  background: rgba(226, 234, 244, 0.6);
 }
 
 .lead-container h4 {

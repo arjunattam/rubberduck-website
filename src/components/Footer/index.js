@@ -10,14 +10,21 @@ const Footer = () => (
   <div className="footer main-section">
     <Container>
       <Row>
-        <Col md="6" sm="6" xs="12">
+        <Col md="4" xs="12">
           <RubberduckIcon size="32" />
-          <div>
-            Why <a href={wiki}>rubberduck</a>?
-          </div>
-          <div>
-            We're hiring, <a href={`mailto:${email}`}>join the team</a>.
-          </div>
+          {'team@rubberduck.io'}
+        </Col>
+        <Col md="4" xs="12">
+          <ul>
+            <li>link 1</li>
+            <li>link 2</li>
+          </ul>
+        </Col>
+        <Col md="4" xs="12">
+          <ul>
+            <li>link 1</li>
+            <li>link 2</li>
+          </ul>
         </Col>
       </Row>
     </Container>

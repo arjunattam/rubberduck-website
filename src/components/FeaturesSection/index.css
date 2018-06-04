@@ -1,3 +1,11 @@
+.feature-main-section {
+  background: linear-gradient(
+    177deg,
+    rgba(226, 234, 244, 0.6) 300px,
+    #2a5298 301px
+  );
+}
+
 .video-switcher {
   border-bottom: 2px solid #8384ab;
 }

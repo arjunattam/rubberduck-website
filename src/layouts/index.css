@@ -9,16 +9,6 @@ h1 {
   color: rgba(63, 65, 90);
 }
 
-.blueprint {
-  background: linear-gradient(-177deg, #fff 300px, #2a5298 301px);
-}
-
-.dark-blueprint {
-  border-bottom: 3px solid rgba(239, 234, 255, 0.65);
-  border-top: 3px solid rgba(239, 234, 255, 0.65);
-  background-color: #727294;
-}
-
 .strikethrough {
   position: relative;
 }

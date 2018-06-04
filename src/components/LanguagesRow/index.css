@@ -1,7 +1,10 @@
 .languages-container {
-  background: linear-gradient(-3deg, #fff 75px, #2a5298 76px);
-  padding-bottom: 50px;
-  margin-bottom: 50px;
+  background: linear-gradient(
+    3deg,
+    rgba(226, 234, 244, 0.6) 100px,
+    #2a5298 101px
+  );
+  padding-bottom: 100px;
 }
 
 .languages-container .container {
