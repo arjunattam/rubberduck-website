@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
-
 import Title from '../components/Title';
 import Footer from '../components/Footer';
 import { leadDescription as description } from '../components/Lead';
-import favicon from '../static/icon-16.png';
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
 
 const title = `Rubberduck | ${description}`;
 const meta = [
@@ -20,7 +18,6 @@ const chromeLink =
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title={title} meta={meta}>
-      <link rel="icon" href={favicon} type="image/x-icon" />
       <link rel="chrome-webstore-item" href={chromeLink} />
     </Helmet>
     <div>

@@ -23,5 +23,23 @@ module.exports = {
         fonts: [`lato`],
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/favicon/for-favicon-1500.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
   ],
 };
