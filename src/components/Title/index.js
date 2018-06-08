@@ -1,26 +1,26 @@
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
-import CustomButton from '../CustomButton'
-import RubberduckIcon from '../icon'
-import './index.css'
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import CustomButton from '../CustomButton';
+import RubberduckIcon from '../icon';
+import './index.css';
 
 const downloadLink =
-  'https://chrome.google.com/webstore/detail/rubberduck/nopekhgebkpkbjoclackdlofmcpokgmc'
+  'https://chrome.google.com/webstore/detail/rubberduck/nopekhgebkpkbjoclackdlofmcpokgmc';
 
 const triggerInstall = event => {
   if (chrome && chrome.webstore && chrome.webstore.install) {
-    event.preventDefault()
+    event.preventDefault();
     return chrome.webstore.install(
       null,
       response => {
-        console.log('Installation success', response)
+        console.log('Installation success', response);
       },
       error => {
-        console.log('Installation failure', error)
+        console.log('Installation failure', error);
       }
-    )
+    );
   }
-}
+};
 
 export const InstallButton = () => (
   <CustomButton
@@ -29,22 +29,41 @@ export const InstallButton = () => (
     onClick={e => triggerInstall(e)}
     icon={'devicon-chrome-plain'}
   />
-)
+);
+
+// TODO(arjun): should this be using gatsby-link?
+const Navigation = () => (
+  <ul>
+    <li>
+      <a href="/#products">Pricing</a>
+    </li>
+    <li>
+      <a href="/blog">Blog</a>
+    </li>
+    <li>
+      <a href="https://support.rubberduck.io/" target="_blank">
+        Support
+      </a>
+    </li>
+  </ul>
+);
 
 const Title = () => (
   <div className="title">
     <Container>
       <Row className="title-row">
-        <Col xs="12" sm="6" md="8" className="logo-col">
-          <RubberduckIcon size="32" />
-          <h1>Rubberduck</h1>
+        <Col xs="12" sm="6" md="8">
+          <a href="/">
+            <RubberduckIcon size="24" />
+            <h1>Rubberduck</h1>
+          </a>
         </Col>
-        <Col xs="12" sm="6" md="4" className="install-col">
-          <InstallButton />
+        <Col xs="12" sm="6" md="4" className="navigation-col">
+          <Navigation />
         </Col>
       </Row>
     </Container>
   </div>
-)
+);
 
-export default Title
+export default Title;

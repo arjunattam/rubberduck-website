@@ -1,17 +1,16 @@
-import React from 'react'
-import { Button } from 'reactstrap'
-import 'devicon/devicon.css'
-import './index.css'
+import React from 'react';
+import { Button } from 'reactstrap';
+import 'devicon/devicon.css';
 
-const CustomButton = props => (
+const CustomButton = ({ href, onClick, width, icon, text }) => (
   <a
-    className="btn btn-primary install-button"
-    href={props.href}
-    onClick={props.onClick}
-    style={{ width: props.width }}
+    className="btn btn-primary"
+    href={href}
+    onClick={onClick}
+    style={{ width, color: 'white' }}
   >
-    <i className={props.icon} /> {props.text}
+    <i className={icon} /> {text}
   </a>
-)
+);
 
-export default CustomButton
+export default CustomButton;

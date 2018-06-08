@@ -5,16 +5,12 @@
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
 }
 
-.product-card h5 {
-  color: #05070a;
-  font-size: 1.5rem;
+.product-card .tagline {
+  color: #4a4a91;
 }
 
-.product-card .tagline {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-  color: #4a4a91;
+.product-title h5 {
+  margin-bottom: 1.25rem;
 }
 
 .product-card .card-body {

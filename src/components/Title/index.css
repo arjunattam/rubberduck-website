@@ -1,36 +1,54 @@
 .title {
-  padding: 12px 0;
+  padding: 12px 0 2px;
+  font-size: 14px;
   background-color: #f8f8fb;
-  border-bottom: 2px solid rgba(239, 234, 255, 0.65);
+  border-bottom: 3px solid rgba(239, 234, 255, 0.65);
 }
 
 .title-row {
   max-width: 800px;
+  line-height: 1;
   margin: 0 auto;
-  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .title-row h1 {
+  all: unset;
   display: inline-block;
-  margin-left: 10px;
-  margin: 3px 0 0 10px;
+  margin: 0 10px;
   vertical-align: middle;
-  font-size: 1.35rem;
   color: #29293b;
+  font-size: 14px;
 }
 
 .title-row svg {
   vertical-align: middle;
 }
 
-.title-row .install-col {
+.title-row .navigation-col {
   text-align: right;
 }
 
+.navigation-col ul {
+  margin-top: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-col li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
 @media only screen and (max-width: 576px) {
-  .title-row .install-col {
+  .title-row .navigation-col {
     display: none;
+  }
+
+  .title {
+    padding-bottom: 8px;
   }
 }

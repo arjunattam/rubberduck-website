@@ -1,7 +1,7 @@
-import React from 'react'
-import { Row, Col, Container } from 'reactstrap'
-import 'devicon/devicon.css'
-import './index.css'
+import React from 'react';
+import { Row, Col, Container } from 'reactstrap';
+import 'devicon/devicon.css';
+import './index.css';
 
 const LanguagesRow = () => (
   <div className="languages-container main-section">
@@ -17,6 +17,6 @@ const LanguagesRow = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
-export default LanguagesRow
+export default LanguagesRow;
