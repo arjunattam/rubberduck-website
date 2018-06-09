@@ -47,7 +47,7 @@ const Navigation = () => (
 );
 
 const Title = () => (
-  <div className="title">
+  <div className="title title-section">
     <Container>
       <Row className="title-row">
         <Col xs="12" sm="6" md="8">

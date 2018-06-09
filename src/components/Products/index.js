@@ -11,6 +11,7 @@ import {
 import { makeAPICalls } from './utils';
 import { InstallButton } from '../Title';
 import './index.css';
+import { startDownload } from '../../utils/download';
 
 class CTA extends React.Component {
   state = {
@@ -43,6 +44,8 @@ class CTA extends React.Component {
     const { hasInput, text, subText } = this.props;
     return (
       <div>
+        <Button onClick={startDownload}>Start download</Button>
+
         {hasInput ? (
           <div className="cta-vertical-group">
             <form onSubmit={e => this.sendRequest(e)}>
@@ -141,7 +144,7 @@ const PrivateSourceCard = props => (
       />
       <CTAColumn
         text={price}
-        subText={'Includes a year of updates and 14 day free trial'}
+        subText={'For OS X El Capitan or later'}
         hasInput={true}
       />
     </Row>

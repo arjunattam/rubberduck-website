@@ -15,9 +15,9 @@ export default function Index({ data }) {
       {posts.map(
         ({ node: post }) =>
           post.frontmatter.type === 'changelog' ? (
-            <ChangelogEntry post={post} />
+            <ChangelogEntry post={post} key={post.id} />
           ) : (
-            <BlogPostPreview post={post} />
+            <BlogPostPreview post={post} key={post.id} />
           )
       )}
     </div>
