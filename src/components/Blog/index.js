@@ -15,12 +15,18 @@ export const BlogHeader = props => (
   </div>
 );
 
-export const BlogPostPreview = ({ post }) => (
-  <div className="container blog-preview" key={post.id}>
+const BlogPostHeader = ({ post }) => (
+  <div className="blog-post-header">
     <h3>
       <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
     </h3>
     <h5>{post.frontmatter.date}</h5>
+  </div>
+);
+
+export const BlogPostPreview = ({ post }) => (
+  <div className="container blog-preview" key={post.id}>
+    <BlogPostHeader post={post} />
     <p>{post.excerpt}</p>
     <div>
       <Link to={post.frontmatter.path}>Read more</Link>
@@ -30,10 +36,7 @@ export const BlogPostPreview = ({ post }) => (
 
 export const BlogPostFull = ({ post }) => (
   <div className="container blog-preview" key={post.id}>
-    <h3>
-      <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-    </h3>
-    <h5>{post.frontmatter.date}</h5>
+    <BlogPostHeader post={post} />
     <div dangerouslySetInnerHTML={{ __html: post.html }} />
   </div>
 );

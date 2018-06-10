@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "mercury-website",
+  "description": "Code that powers rubberduck.io",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Arjun Attam",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "devicon": "https://github.com/konpa/devicon",
@@ -21,9 +21,7 @@
     "react-helmet": "^5.2.0",
     "reactstrap": "5.0.0-beta"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf public/",
@@ -31,10 +29,16 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gsclean": "gsutil -m rm \"gs://www.rubberduck.io/**\"",
+    "gsbackup":
+      "gsutil -m cp -r gs://www.rubberduck.io/dmgs/* gs://rubberduck-dmgs-backup",
+    "gsrestore":
+      "gsutil -m cp -r gs://rubberduck-dmgs-backup/* gs://www.rubberduck.io/dmgs/ && npm run gspermissions",
+    "gsclean":
+      "npm run gsbackup && gsutil -m rm \"gs://www.rubberduck.io/**\" && npm run gsrestore",
     "deploy": "gsutil -m cp -r public/* gs://www.rubberduck.io",
-    "permissions": "gsutil -m acl ch -u AllUsers:R \"gs://www.rubberduck.io/**\"",
-    "push": "npm run build && npm run deploy && npm run permissions"
+    "gspermissions":
+      "gsutil -m acl ch -u AllUsers:R \"gs://www.rubberduck.io/**\"",
+    "push": "npm run build && npm run deploy && npm run gspermissions"
   },
   "devDependencies": {
     "prettier": "^1.11.1"

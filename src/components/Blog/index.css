@@ -1,8 +1,8 @@
 .blog-main-section {
   background: linear-gradient(
     177deg,
-    rgba(226, 234, 244, 0.6) 170px,
-    #fff 171px
+    rgba(226, 234, 244, 0.6) 180px,
+    #fff 181px
   );
 }
 
@@ -16,14 +16,9 @@
   padding-left: 7px;
 }
 
-.blog-preview h3 {
-  text-align: center;
-}
-
-.blog-preview h5 {
-  text-align: center;
+.blog-post-header {
   margin-bottom: 30px;
-  color: #999;
+  text-align: center;
 }
 
 .blog-changelog {

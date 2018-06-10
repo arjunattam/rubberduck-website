@@ -2,6 +2,15 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+// TODO(arjun): where does this go?
+const price = (
+  <span>
+    {'Get early access at '}
+    <span className="strikethrough">{'$119'}</span>
+    {' $59'}
+  </span>
+);
+
 const Pricing = props => (
   <div className="container blog-preview">
     <h3>Self-hosted for private repositories</h3>

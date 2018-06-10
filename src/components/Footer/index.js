@@ -12,15 +12,19 @@ const twitter = 'https://twitter.com/getrubberduck';
 const slack =
   'https://join.slack.com/t/karigarihq/shared_invite/enQtMzM5NzQxNjQxNTA1LTM0ZDFhNWQ3YmEyYmExZTY1ODJmM2U3NzExM2E0YmQxODcxYTgwYzczOTVkOGY5ODk2MWE0MzE2ODliNGU1ZDc';
 
+const EmailButton = () => (
+  <a className="btn email-btn" href={mailto}>
+    {email}
+  </a>
+);
+
 const Footer = () => (
-  <div className="footer main-section">
+  <div className="footer main-section dark">
     <Container>
       <Row>
         <Col md="6" xs="12">
           <RubberduckIcon size="32" />
-          <a className="btn email-btn" href={mailto}>
-            {email}
-          </a>
+          <EmailButton />
         </Col>
         <Col md="3" xs="6">
           <ul>

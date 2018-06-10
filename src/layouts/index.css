@@ -1,12 +1,12 @@
 body {
-  font-family: avenir, -apple-system, Lato, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+  font-family: 'Avenir Next', -apple-system, Lato, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 h1 {
   font-weight: bold;
-  color: rgba(63, 65, 90);
+  color: #474963;
 }
 
 .strikethrough {
@@ -57,6 +57,12 @@ h1 {
   padding: 50px 15px;
 }
 
+.main-section .mini-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
 .title-section .container {
   max-width: 800px;
   margin: 0 auto;
@@ -82,8 +88,17 @@ h1 {
 
 /* Overriding the shade of blue */
 .btn-primary {
+  color: #fff;
   background-color: #233f6c;
-  border-color: #233f6c;
+  border: 2px solid #233f6c;
+  width: 208px;
+}
+
+.btn-hollow {
+  color: #233f6c;
+  font-weight: 500;
+  background-color: #eef3f8;
+  width: 130px;
 }
 
 .btn-primary:hover {
@@ -100,4 +115,12 @@ a {
 a:hover {
   color: #233f6c;
   text-decoration: none;
+}
+
+.dark a {
+  color: #c4e2ff;
+}
+
+.dark a:hover {
+  color: #f5f294;
 }

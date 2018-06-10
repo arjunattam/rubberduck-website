@@ -1,15 +1,7 @@
 .footer {
   padding-top: 100px;
-  background: linear-gradient(3deg, #233f6c 250px, #fff 251px);
+  background: linear-gradient(2deg, #233f6c 250px, #fff 251px);
   font-size: 14px;
-}
-
-.footer a {
-  color: #aed4ff;
-}
-
-.footer a:hover {
-  color: #f5f294;
 }
 
 .footer .email-btn {
@@ -37,7 +29,7 @@
 
 @media only screen and (max-width: 576px) {
   .footer {
-    background: linear-gradient(3deg, #233f6c 330px, #fff 331px);
+    background: linear-gradient(2deg, #233f6c 330px, #fff 331px);
   }
 
   .footer ul {

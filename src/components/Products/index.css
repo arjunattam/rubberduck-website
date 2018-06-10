@@ -1,6 +1,6 @@
 .product-main-section-1 {
   padding-bottom: 80px;
-  background: linear-gradient(3deg, #fff 80px, rgba(226, 234, 244, 0.6) 81px);
+  background: linear-gradient(2deg, #fff 60px, rgba(226, 234, 244, 0.6) 61px);
 }
 
 .product-main-section-1 .container {
@@ -8,7 +8,7 @@
 }
 
 .product-main-section-2 .container {
-  padding: 40px 15px 20px;
+  padding: 30px 15px 20px;
 }
 
 .info-col h3 {
@@ -27,7 +27,7 @@
   margin: 0;
 }
 
-.info-col ul li {
+.info-col ul li .li-span {
   display: inline-block;
   border-bottom: 2px solid rgba(177, 177, 177, 0.1);
   padding: 10px 0;
@@ -42,8 +42,10 @@
 }
 
 .cta-sub {
-  font-size: 14px;
-  margin-top: 15px;
+  font-size: 13px;
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 .cta-vertical-group input {

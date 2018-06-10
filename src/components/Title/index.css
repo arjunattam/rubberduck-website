@@ -1,13 +1,7 @@
 .title {
-  padding: 12px 0 2px;
-  font-size: 14px;
+  padding: 18px 0 2px;
   background-color: #233f6c;
   border-bottom: 4px solid rgba(75, 120, 255, 0.65);
-}
-
-.title a {
-  color: #d7e8ff;
-  padding: 2px;
 }
 
 .title-row {
@@ -20,29 +14,20 @@
 
 .title-row h1 {
   all: unset;
-  display: inline-block;
-  margin: 0 10px;
-  vertical-align: middle;
-  color: #29293b;
-  font-size: 14px;
+  margin-left: 10px;
+  vertical-align: top;
 }
 
 .title-row svg {
-  vertical-align: middle;
+  margin-top: -5px;
 }
 
 .title-row .navigation-col {
   text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .navigation-col ul {
-  margin-top: 8px;
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .navigation-col li {
@@ -51,11 +36,7 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .title-row .navigation-col {
+  .title-row .hide-mobile {
     display: none;
-  }
-
-  .title {
-    padding-bottom: 8px;
   }
 }

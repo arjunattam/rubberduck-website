@@ -1,0 +1,54 @@
+import React from 'react';
+import DownloadIcon from './downloadIcon';
+import { startDownload } from '../../utils/download';
+import 'devicon/devicon.css';
+
+const CustomButton = ({ href, onClick, iconJsx, text, isHollow }) => (
+  <a
+    className={`btn btn-primary ${isHollow ? 'btn-hollow' : ''}`}
+    href={href}
+    onClick={onClick}
+  >
+    {iconJsx} {text}
+  </a>
+);
+
+const downloadLink =
+  'https://chrome.google.com/webstore/detail/rubberduck/nopekhgebkpkbjoclackdlofmcpokgmc';
+
+const triggerInstall = event => {
+  if (chrome && chrome.webstore && chrome.webstore.install) {
+    event.preventDefault();
+    return chrome.webstore.install(
+      null,
+      response => {
+        console.log('Installation success', response);
+      },
+      error => {
+        console.log('Installation failure', error);
+      }
+    );
+  }
+};
+
+export const InstallButton = () => (
+  <CustomButton
+    text={'Install in your browser'}
+    href={downloadLink}
+    onClick={e => triggerInstall(e)}
+    iconJsx={<i className="devicon-chrome-plain" />}
+  />
+);
+
+export const DownloadButton = () => (
+  <CustomButton
+    text={'Download the .app'}
+    href={'#'}
+    onClick={startDownload}
+    iconJsx={<DownloadIcon size={15} />}
+  />
+);
+
+export const BuyButton = () => (
+  <CustomButton text={'Buy license'} href={'/pricing'} isHollow={true} />
+);

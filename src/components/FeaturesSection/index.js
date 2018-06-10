@@ -1,25 +1,18 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-import './index.css';
+import { Row, Col, Container, Card, CardBody } from 'reactstrap';
 import FeatureImage from './Image';
 import VideoRow from './Video';
-import hoverImg from '../../static/features/hover-small.png';
-import usagesImg from '../../static/features/usages-small.png';
-import treeImg from '../../static/features/tree-small.png';
+import './index.css';
 
-const getClass = isActive =>
-  isActive ? 'features-card active' : 'features-card';
-
-const FeatureCard = props => (
-  <Card className={getClass(props.isActive)} inverse={true}>
-    <div className="feature-card-inner" onClick={props.onClick}>
+const FeatureCard = ({ isActive, onClick, title, text, img }) => (
+  <Card className={`features-card ${isActive ? 'active' : ''}`} inverse={true}>
+    <div className="feature-card-inner" onClick={onClick}>
       <CardBody>
-        <h5>{props.title}</h5>
-        <div>{props.text}</div>
+        <h5>{title}</h5>
+        <div>{text}</div>
       </CardBody>
       <div className="images">
-        <FeatureImage src={props.img} />
+        <FeatureImage src={img} />
       </div>
     </div>
   </Card>
@@ -120,18 +113,17 @@ export class VideoContainer extends React.Component {
   };
 
   render() {
-    const element = sections[0];
     return (
       <div className="main-section feature-main-section">
         <div className="top-half" />
         <Container className="video-container">
           <div className="video-container-inner">
             {this.renderVideo()}
-            <Row className="features-row">
+            <Row className="features-row no-gutters">
               <Col>{this.renderCard(0)}</Col>
               <Col>{this.renderCard(1)}</Col>
             </Row>
-            <Row className="features-row">
+            <Row className="features-row no-gutters">
               <Col>{this.renderCard(2)}</Col>
               <Col>{this.renderCard(3)}</Col>
             </Row>

@@ -1,16 +1,13 @@
 .languages-container {
-  background: linear-gradient(
-    3deg,
-    rgba(226, 234, 244, 0.6) 100px,
-    #2a5298 101px
-  );
-  padding-bottom: 100px;
+  background: linear-gradient(2deg, rgba(226, 234, 244, 0.6) 90px, #fff 91px);
+  padding-bottom: 80px;
 }
 
 .languages-container .container {
   padding: 10px 0 40px;
   text-align: center;
-  color: #f0f0f0;
+  font-weight: 500;
+  color: #787e92;
 }
 
 .languages-row,
@@ -24,7 +21,7 @@
 .languages-row i {
   font-size: 36px;
   padding: 0 1rem;
-  color: #f0f0f0f5;
+  color: #787e92;
 }
 
 @media only screen and (max-width: 576px) {

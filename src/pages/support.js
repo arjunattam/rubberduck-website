@@ -15,60 +15,76 @@ const triggerChat = () => {
   });
 };
 
-const ContactUs = props => (
-  <div className="container blog-preview">
-    <h3>Contact us</h3>
-    <p>
-      <a href="#" onClick={triggerChat}>
-        Chat with us now
-      </a>.
-    </p>
-    <p>
-      For any enquiries, you can email us at <a href={mailto}>{email}</a>.
-    </p>
-    <p>
-      If you prefer, you can also reach us through <a href={twitter}>Twitter</a>.
-      Or, perhaps you would like to join our team and user community on{' '}
-      <a href={slack}>Slack</a>?
-    </p>
+const MiniSection = ({ title, content }) => (
+  <div className="mini-container blog-preview">
+    <div className="blog-post-header">
+      <h3>{title}</h3>
+    </div>
+    {content}
   </div>
+);
+
+const ContactUs = props => (
+  <MiniSection
+    title={'Contact us'}
+    content={
+      <div>
+        <p>
+          For any enquiries, you can{' '}
+          <a href="#" onClick={triggerChat}>
+            chat with us now
+          </a>. You can also email us at <a href={mailto}>{email}</a>.
+        </p>
+        <p>
+          We are also available on <a href={twitter}>Twitter</a>, and you can
+          join us and other users on <a href={slack}>Slack</a>.
+        </p>
+      </div>
+    }
+  />
 );
 
 const IssueReport = props => (
-  <div className="container blog-preview">
-    <h3>Issue tracker</h3>
-    <p>
-      To report bugs, or file feature requests, please use our{' '}
-      <a href={github}>issue tracker.</a>
-    </p>
-  </div>
+  <MiniSection
+    title={'Issue tracker'}
+    content={
+      <p>
+        Please use our <a href={github}>issue tracker</a> to report bugs, or
+        file feature requests.
+      </p>
+    }
+  />
 );
 
 const ViewDocs = props => (
-  <div className="container blog-preview">
-    <h3>Knowledge base</h3>
-    <p>
-      Our <a href="https://support.rubberduck.io">knowledge base</a> answers
-      some frequently asked questions.
-    </p>
-    <ul>
-      <li>
-        <a href="https://support.rubberduck.io/articles/26915">
-          Getting started with self-hosted
-        </a>
-      </li>
-      <li>
-        <a href="https://support.rubberduck.io/articles/26916">
-          Setup authorization on self-hosted
-        </a>
-      </li>
-      <li>
-        <a href="https://support.rubberduck.io/articles/26922">
-          Supported languages
-        </a>
-      </li>
-    </ul>
-  </div>
+  <MiniSection
+    title={'Knowledge base'}
+    content={
+      <div>
+        <p>
+          Our <a href="https://support.rubberduck.io">knowledge base</a> answers
+          some frequently asked questions.
+        </p>
+        <ul>
+          <li>
+            <a href="https://support.rubberduck.io/articles/26915">
+              Getting started with self-hosted
+            </a>
+          </li>
+          <li>
+            <a href="https://support.rubberduck.io/articles/26916">
+              Setup authorization on self-hosted
+            </a>
+          </li>
+          <li>
+            <a href="https://support.rubberduck.io/articles/26922">
+              Supported languages
+            </a>
+          </li>
+        </ul>
+      </div>
+    }
+  />
 );
 
 export default function Index({ data }) {
