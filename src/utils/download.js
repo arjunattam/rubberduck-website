@@ -4,10 +4,22 @@ export const startDownload = () => {
   getAjax(APPCAST_URL, response => {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(response, 'text/xml');
-    const latestItem = xmlDoc.getElementsByTagName('item')[0];
-    const enclosure = latestItem.getElementsByTagName('enclosure')[0];
-    const downloadUrl = enclosure.getAttribute('url');
-    return window.open(downloadUrl, '_self');
+    const items = xmlDoc.getElementsByTagName('item');
+    let versions = {};
+
+    Array.from(items).forEach(item => {
+      const enclosure = item.getElementsByTagName('enclosure')[0];
+      const version = +enclosure.getAttribute('sparkle:version');
+      const downloadUrl = enclosure.getAttribute('url');
+      versions[version] = downloadUrl;
+    });
+
+    const latestUrl = Object.keys(versions).reduce(
+      (a, b) => (a > b ? versions[a] : versions[b]),
+      versions[0]
+    );
+
+    return window.open(latestUrl, '_self');
   });
 };
 
