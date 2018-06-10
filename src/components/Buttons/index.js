@@ -3,14 +3,17 @@ import DownloadIcon from './downloadIcon';
 import { startDownload } from '../../utils/download';
 import 'devicon/devicon.css';
 
-const CustomButton = ({ href, onClick, iconJsx, text, isHollow }) => (
-  <a
-    className={`btn btn-primary ${isHollow ? 'btn-hollow' : ''}`}
-    href={href}
-    onClick={onClick}
-  >
-    {iconJsx} {text}
-  </a>
+const CustomButton = ({ href, onClick, iconJsx, text, isHollow, subText }) => (
+  <div className="btn-container">
+    <a
+      className={`btn btn-primary ${isHollow ? 'btn-hollow' : ''}`}
+      href={href}
+      onClick={onClick}
+    >
+      {iconJsx} {text}
+    </a>
+    {subText ? <div className="button-sub">{subText}</div> : null}
+  </div>
 );
 
 const downloadLink =
@@ -42,10 +45,11 @@ export const InstallButton = () => (
 
 export const DownloadButton = () => (
   <CustomButton
-    text={'Download the .app'}
+    text={'Download menu app'}
     href={'#'}
     onClick={startDownload}
     iconJsx={<DownloadIcon size={15} />}
+    subText={'requires macOS 10.11+'}
   />
 );
 

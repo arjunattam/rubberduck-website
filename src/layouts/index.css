@@ -89,23 +89,29 @@ h1 {
 /* Overriding the shade of blue */
 .btn-primary {
   color: #fff;
-  background-color: #233f6c;
-  border: 2px solid #233f6c;
+  background-color: #3b66ad;
+  border: 2px solid #3b66ad;
   width: 208px;
 }
 
 .btn-hollow {
-  color: #233f6c;
+  color: #3b66ad;
   font-weight: 500;
   background-color: #eef3f8;
   width: 130px;
 }
 
 .btn-primary:hover {
-  background-color: rgb(46, 78, 201);
-  border-color: rgb(46, 78, 201);
+  background-color: #568ce4;
+  border-color: #568ce4;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   transform: translateY(-1px);
+}
+
+.button-sub {
+  font-size: 13px;
+  color: #888;
+  margin-top: 5px;
 }
 
 a {

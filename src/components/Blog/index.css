@@ -6,6 +6,10 @@
   );
 }
 
+.blog-main-section strong {
+  font-weight: 600;
+}
+
 .blog-header {
   display: flex;
   justify-content: space-between;

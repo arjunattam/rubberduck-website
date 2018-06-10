@@ -56,3 +56,12 @@ export const ChangelogEntry = ({ post }) => (
     </Row>
   </div>
 );
+
+export const MiniSection = ({ title, content }) => (
+  <div className="mini-container blog-preview">
+    <div className="blog-post-header">
+      <h3>{title}</h3>
+    </div>
+    {content}
+  </div>
+);

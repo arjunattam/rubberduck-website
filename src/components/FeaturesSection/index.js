@@ -20,20 +20,20 @@ const FeatureCard = ({ isActive, onClick, title, text, img }) => (
 
 const VIDEOS = [
   {
-    img: 'feature-1.jpg',
-    video: 'feature-1-cropped-hb.mp4',
+    img: 'features/feature-1.jpg',
+    video: 'features/feature-1-cropped-hb.mp4',
   },
   {
-    img: 'feature-2.jpg',
-    video: 'feature-2-v4-cropped-hb.mp4',
+    img: 'features/feature-2.jpg',
+    video: 'features/feature-2-v4-cropped-hb.mp4',
   },
   {
-    img: 'feature-3.jpg',
-    video: 'feature-3-cropped-hb.mp4',
+    img: 'features/feature-3.jpg',
+    video: 'features/feature-3-cropped-hb.mp4',
   },
   {
-    img: 'feature-4.jpg',
-    video: 'feature-4-v2-cropped-hb.mp4',
+    img: 'features/feature-4.jpg',
+    video: 'features/feature-4-v2-cropped-hb.mp4',
   },
 ];
 

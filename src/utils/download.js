@@ -1,6 +1,5 @@
-const APPCAST_URL = 'http://localhost:8000/appcast.xml';
-
 export const startDownload = () => {
+  const APPCAST_URL = `${window.location.origin}/appcast.xml`;
   getAjax(APPCAST_URL, response => {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(response, 'text/xml');

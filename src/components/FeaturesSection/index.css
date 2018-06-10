@@ -74,9 +74,3 @@
 .features-card:hover .features-image {
   border: 3px solid #afbdd6;
 }
-
-@media only screen and (max-width: 576px) {
-  .video-container .row .col:last-child {
-    margin-top: 20px;
-  }
-}

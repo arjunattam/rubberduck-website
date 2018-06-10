@@ -21,13 +21,13 @@
   color: #2a5298;
 }
 
-.info-col ul {
+.info-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.info-col ul li .li-span {
+.info-list li .li-span {
   display: inline-block;
   border-bottom: 2px solid rgba(177, 177, 177, 0.1);
   padding: 10px 0;
@@ -37,15 +37,9 @@
   margin: 4px auto;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.cta-sub {
-  font-size: 13px;
-  color: #888;
-  margin-top: 5px;
-  margin-bottom: 25px;
+  justify-content: space-evenly;
 }
 
 .cta-vertical-group input {

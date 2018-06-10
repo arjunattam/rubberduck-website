@@ -1,0 +1,25 @@
+.demo-img {
+  width: 100%;
+  max-width: 360px;
+  border: 4px solid #dae2f1;
+}
+
+.demo-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.coming-soon {
+  text-transform: uppercase;
+  font-size: 10px;
+  vertical-align: middle;
+  background: #e4efff;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.pricing-row {
+  padding: 60px 0;
+  text-align: center;
+}

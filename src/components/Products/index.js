@@ -4,28 +4,29 @@ import { Row, Col, Container } from 'reactstrap';
 import { InstallButton, DownloadButton, BuyButton } from '../Buttons';
 import './index.css';
 
+export const InfoList = ({ textList }) => (
+  <ul className="info-list">
+    {textList.map(element => (
+      <li key={element}>
+        <span className="li-span">{element}</span>
+      </li>
+    ))}
+  </ul>
+);
+
 const InfoColumn = props => (
   <Col className="info-col" md="8" xs="12">
     <h3>
       <span>{props.name}</span> {props.forWhat}
     </h3>
-    <ul>
-      {props.textList.map(element => (
-        <li key={element}>
-          <span className="li-span">{element}</span>
-        </li>
-      ))}
-    </ul>
+    <InfoList {...props} />
   </Col>
 );
 
-const CTAColumn = ({ isExtension, subText }) => (
+const CTAColumn = ({ isExtension }) => (
   <Col className="cta-col" md="4" xs="12">
-    <div>
-      {isExtension ? <InstallButton /> : <DownloadButton />}
-      <div className="cta-sub" children={subText} />
-      {!isExtension ? <BuyButton /> : null}
-    </div>
+    {isExtension ? <InstallButton /> : <DownloadButton />}
+    {!isExtension ? <BuyButton /> : null}
   </Col>
 );
 
@@ -36,7 +37,7 @@ const OpenSourceCard = () => (
         name={'Basic'}
         forWhat={'for open source repositories'}
         textList={[
-          'Free to use. No limits.',
+          'Free to use.',
           'Supports GitHub.com and Bitbucket Cloud.',
           'Auto-updates for features and language support.',
         ]}
@@ -56,14 +57,14 @@ const PrivateSourceCard = () => (
         name={'Self-hosted'}
         forWhat={'for private repositories'}
         textList={[
-          'Run the analyzer server on your machine.',
-          'Single user license. Unlimited repositories.',
+          'Run the analyzer server in a menu bar app.',
+          'Single user license. 14 day free trial.',
           <span>
             Built for security. <Link to="/pricing">Learn more →</Link>
           </span>,
         ]}
       />
-      <CTAColumn isExtension={false} subText={'requires macOS 10.11+'} />
+      <CTAColumn isExtension={false} />
     </Row>
   </Container>
 );

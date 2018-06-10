@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { MiniSection } from '../components/Blog';
 
 const email = 'team@rubberduck.io';
 const mailto = `mailto:${email}`;
@@ -14,15 +15,6 @@ const triggerChat = () => {
     api.sidebar.open();
   });
 };
-
-const MiniSection = ({ title, content }) => (
-  <div className="mini-container blog-preview">
-    <div className="blog-post-header">
-      <h3>{title}</h3>
-    </div>
-    {content}
-  </div>
-);
 
 const ContactUs = props => (
   <MiniSection
