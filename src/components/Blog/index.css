@@ -1,3 +1,15 @@
+.blog-main-section {
+  background: linear-gradient(
+    177deg,
+    rgba(226, 234, 244, 0.6) 180px,
+    #fff 181px
+  );
+}
+
+.blog-main-section strong {
+  font-weight: 600;
+}
+
 .blog-header {
   display: flex;
   justify-content: space-between;
@@ -8,17 +20,13 @@
   padding-left: 7px;
 }
 
-.blog-preview h3 {
+.blog-post-header {
+  margin-bottom: 30px;
   text-align: center;
-}
-
-.blog-preview h5 {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .blog-changelog {
-  background-color: #fbfbfb;
+  background-color: rgba(252, 252, 252, 0.8);
   border: 1px solid #eee;
 }
 
@@ -29,7 +37,7 @@
 }
 
 .blog-changelog li {
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid rgba(238, 238, 238, 0.5);
   padding: 8px 0;
 }
 

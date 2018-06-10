@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-
-import { InstallButton } from '../Title';
+import { InstallButton } from '../Buttons';
 import './index.css';
 
 export const leadDescription = 'Finish your code reviews faster';
