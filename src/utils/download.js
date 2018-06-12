@@ -1,5 +1,6 @@
 export const startDownload = () => {
-  const APPCAST_URL = `${window.location.origin}/appcast.xml`;
+  const noCache = +new Date();
+  const APPCAST_URL = `${window.location.origin}/appcast.xml?${noCache}`;
   getAjax(APPCAST_URL, response => {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(response, 'text/xml');
