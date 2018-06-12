@@ -7,7 +7,7 @@ import { leadDescription as description } from '../components/Lead';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
-const title = `Rubberduck | ${description}`;
+const title = 'Rubberduck';
 const meta = [
   { name: 'description', content: description },
   { name: 'keywords', content: 'github, code, reviews, sidebar' },

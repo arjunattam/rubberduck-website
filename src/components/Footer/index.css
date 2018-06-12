@@ -1,26 +1,38 @@
 .footer {
-  border-top: 3px solid rgb(90, 90, 134);
-  background-color: #28283c;
-  color: #ccc;
+  padding-top: 100px;
+  background: linear-gradient(2deg, #233f6c 250px, #fff 251px);
   font-size: 14px;
 }
 
-.footer a {
-  color: #f5f294;
+.footer .email-btn {
+  display: block;
+  margin: 10px 0;
+  width: 160px;
+  font-size: 14px;
+  border: 2px solid #aed4ff;
 }
 
-.footer a:hover {
-  color: #f8e71c;
+.footer .email-btn:hover {
+  border: 2px solid #f5f294;
 }
 
-.footer .col-2 {
-  text-align: right;
-  padding-top: 40px;
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  padding: 3px;
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 576px) {
-  .footer .col-2 {
-    text-align: left;
-    padding-top: 25px;
+  .footer {
+    background: linear-gradient(2deg, #233f6c 330px, #fff 331px);
+  }
+
+  .footer ul {
+    margin-top: 30px;
   }
 }
