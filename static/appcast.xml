@@ -3,6 +3,12 @@
   <channel>
     <title>Rubberduck</title>
     <item>
+      <title>0.1.5</title>
+      <pubDate>Thu, 14 Jun 2018 22:06:17 +0530</pubDate>
+      <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+      <enclosure url="https://www.rubberduck.io/dmgs/Rubberduck-0.1.5.dmg" sparkle:version="6" sparkle:shortVersionString="0.1.5" length="74793664" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>0.1.4</title>
       <pubDate>Tue, 12 Jun 2018 15:31:21 +0530</pubDate>
       <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
