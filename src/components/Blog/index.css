@@ -45,6 +45,10 @@
   color: rgb(81, 82, 82);
 }
 
+.blog-post-content img {
+  max-width: 100%;
+}
+
 .gatsby-resp-image-background-image {
   margin: 40px auto;
   border: 1px solid rgba(235, 234, 242, 0.62);
