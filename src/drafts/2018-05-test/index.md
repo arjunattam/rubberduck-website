@@ -12,6 +12,11 @@ In my last job, I discovered a super power: fearlessly digging through someone e
 
 2.  Reading through react-native libraries showed me how we could wrap our native SDKs for react native, just before the framework was picking up, thereby unlocking an entirely new set of customers.
 
+
+asdfasd
+
+
+
 3.  Reading through example Xamarin bindings of native mobile SDKs helped me create Xamarin bindings for our own, and thereby enable us to crack a big enterprise customer.
 
 ```
