@@ -24,6 +24,13 @@ const BlogPostHeader = ({ post }) => (
   </div>
 );
 
+const BlogPostFooter = () => (
+  <div className="blog-post-footer">
+    Have feedback or comments on this post? Let us know on{' '}
+    <a href="https://twitter.com/getrubberduck">Twitter</a>.
+  </div>
+);
+
 export const BlogPostPreview = ({ post }) => (
   <div className="container blog-preview" key={post.id}>
     <BlogPostHeader post={post} />
@@ -37,7 +44,11 @@ export const BlogPostPreview = ({ post }) => (
 export const BlogPostFull = ({ post }) => (
   <div className="container blog-preview" key={post.id}>
     <BlogPostHeader post={post} />
-    <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div
+      className="blog-post-content"
+      dangerouslySetInnerHTML={{ __html: post.html }}
+    />
+    <BlogPostFooter />
   </div>
 );
 

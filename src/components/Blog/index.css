@@ -25,6 +25,51 @@
   text-align: center;
 }
 
+.blog-post-header h3 {
+  font-size: 2rem;
+}
+
+.blog-post-footer {
+  margin: 50px 0 0;
+  background: rgba(216, 213, 224, 0.13);
+  padding: 20px;
+  border: 1px solid rgba(235, 234, 242, 0.62);
+  font-size: 14px;
+}
+
+.blog-post-content h2 {
+  font-size: 1.75rem;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  color: rgb(81, 82, 82);
+}
+
+.gatsby-resp-image-background-image {
+  margin: 40px auto;
+  border: 1px solid rgba(235, 234, 242, 0.62);
+}
+
+code[class*='language-'] {
+  font-size: 12px;
+}
+
+.gatsby-highlight {
+  width: 100vw;
+  border-top: 1px solid rgba(235, 234, 242, 0.62);
+  border-bottom: 1px solid rgba(235, 234, 242, 0.62);
+  background: rgba(212, 235, 255, 0.26);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 20px -50vw;
+}
+
+.gatsby-highlight pre {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .blog-changelog {
   background-color: rgba(252, 252, 252, 0.8);
   border: 1px solid #eee;
