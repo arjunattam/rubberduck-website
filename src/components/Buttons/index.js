@@ -54,5 +54,5 @@ export const DownloadButton = () => (
 );
 
 export const BuyButton = () => (
-  <CustomButton text={'Buy license'} href={'/pricing'} isHollow={true} />
+  <CustomButton text={'Buy license'} href={'/selfhosted'} isHollow={true} />
 );

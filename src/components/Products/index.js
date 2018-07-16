@@ -60,7 +60,7 @@ const PrivateSourceCard = () => (
           'Run the analyzer server in a menu bar app.',
           'Single user license. 14 day free trial.',
           <span>
-            Built for security. <Link to="/pricing">Learn more →</Link>
+            Built for security. <Link to="/selfhosted">Learn more →</Link>
           </span>,
         ]}
       />

@@ -29,7 +29,7 @@ const Footer = () => (
         <Col md="3" xs="6">
           <ul>
             <li>
-              <Link to="/pricing">Pricing</Link>
+              <Link to="/selfhosted">Self-hosted</Link>
             </li>
             <li>
               <Link to="/blog">Blog</Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { MiniSection } from '../components/Blog';
-import { PricingContainer } from '../components/Pricing';
+import { PricingContainer } from '../components/Selfhosted';
 import { InstallButton, DownloadButton } from '../components/Buttons';
 
 const Security = props => (
@@ -57,7 +57,7 @@ const OpenSource = props => (
 export default function Index({ data }) {
   return (
     <div className="main-section blog-main-section">
-      <Helmet title={'Rubberduck: Pricing'} />
+      <Helmet title={'Rubberduck: Self-hosted'} />
       <div className="head-container blog-header">
         <h1>Self-hosted</h1>
       </div>

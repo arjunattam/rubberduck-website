@@ -7,7 +7,7 @@ import './index.css';
 const Navigation = () => (
   <ul>
     <li className="hide-mobile">
-      <Link to="/pricing">Pricing</Link>
+      <Link to="/selfhosted">Self-hosted</Link>
     </li>
     <li>
       <Link to="/blog">Blog</Link>
