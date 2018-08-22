@@ -1,0 +1,27 @@
+.embedded-tweet {
+  display: inline-block;
+  margin: 7px;
+  width: 400px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 576px) {
+  .embedded-tweet {
+    width: 300px;
+  }
+}
+
+.tweets-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tweets-scroll-container::-webkit-scrollbar {
+  /* This does not work on firefox */
+  display: none;
+}
+
+.tweets-scroll-container {
+  -ms-overflow-style: none;
+}

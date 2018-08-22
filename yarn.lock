@@ -8181,6 +8181,10 @@ react-transition-group@^2.2.0:
     prop-types "^15.5.8"
     warning "^3.0.0"
 
+react-tweet-embed@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-tweet-embed/-/react-tweet-embed-1.1.1.tgz#91243783e1068b8eadf985fbf706405b6208082e"
+
 react@^15.6.0:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
