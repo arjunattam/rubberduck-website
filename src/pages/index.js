@@ -1,17 +1,17 @@
 import React from 'react';
 import { Lead } from '../components/Lead';
-import LanguagesRow from '../components/LanguagesRow';
+// import LanguagesRow from '../components/LanguagesRow';
 import Tweets from '../components/tweets';
 import { VideoContainer } from '../components/FeaturesSection';
-import ProductContainer from '../components/Products';
+// import ProductContainer from '../components/Products';
 
 const IndexPage = () => (
   <div>
     <Lead />
     <VideoContainer />
     <Tweets />
-    <LanguagesRow />
-    <ProductContainer />
+    {/* <LanguagesRow />
+    <ProductContainer /> */}
   </div>
 );
 

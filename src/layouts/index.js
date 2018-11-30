@@ -20,10 +20,10 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title={title} meta={meta}>
       <link rel="chrome-webstore-item" href={chromeLink} />
     </Helmet>
-    <div>
-      <Title />
+    <div className="pb-5">
+      {/* <Title /> */}
       {children()}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   </div>
 );
