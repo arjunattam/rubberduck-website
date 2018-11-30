@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import { InstallButton } from '../Buttons';
+import { InstallButton, GithubButton } from '../Buttons';
 import './index.css';
 
 export const leadDescription = 'Finish your code reviews faster';
@@ -14,8 +14,9 @@ export class Lead extends React.Component {
         <Container>
           <h1>{leadDescription}</h1>
           <h4>{subDescription}</h4>
-          <div className="lead-button">
+          <div className="lead-button d-flex justify-content-center align-items-center">
             <InstallButton />
+            <GithubButton />
           </div>
         </Container>
       </div>

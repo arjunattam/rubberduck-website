@@ -4,11 +4,12 @@ import { startDownload } from '../../utils/download';
 import 'devicon/devicon.css';
 
 const CustomButton = ({ href, onClick, iconJsx, text, isHollow, subText }) => (
-  <div className="btn-container">
+  <div className="btn-container mx-2">
     <a
       className={`btn btn-primary ${isHollow ? 'btn-hollow' : ''}`}
       href={href}
       onClick={onClick}
+      style={{ width: '100%' }}
     >
       {iconJsx} {text}
     </a>
@@ -40,6 +41,15 @@ export const InstallButton = () => (
     href={downloadLink}
     onClick={e => triggerInstall(e)}
     iconJsx={<i className="devicon-chrome-plain" />}
+  />
+);
+
+export const GithubButton = () => (
+  <CustomButton
+    text={'View on GitHub'}
+    href={'https://github.com/karigari/rubberduck'}
+    isHollow={true}
+    iconJsx={<i className="devicon-github-plain" />}
   />
 );
 
